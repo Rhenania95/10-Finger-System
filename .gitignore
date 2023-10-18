@@ -8,6 +8,7 @@ target/
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
+.text_input.txt
 *.iws
 *.iml
 *.ipr

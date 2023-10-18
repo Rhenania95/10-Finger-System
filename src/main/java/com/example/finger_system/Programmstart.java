@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
 
 public class Programmstart extends Application {
@@ -18,6 +19,12 @@ public class Programmstart extends Application {
     }
 
     public static void main(String[] args) {
+        try {
+            File myObj = new File("text_input.txt");
+            myObj.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         launch();
     }
 }
