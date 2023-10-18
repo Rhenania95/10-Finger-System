@@ -26,9 +26,9 @@
 
 ## 1.1) Einleitung <a name="subparagraph1"></a>
 
-## 1.2) Ziele <a name="subparagraph1"></a>
+## 1.2) Ziele <a name="subparagraph2"></a>
 
-## 1.3) Randbedingungen <a name="subparagraph1"></a>
+## 1.3) Randbedingungen <a name="subparagraph3"></a>
 
 
 ---
