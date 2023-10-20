@@ -1,14 +1,16 @@
 package com.example.finger_system;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
-import java.io.File;
 import java.io.IOException;
-
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 public class Programmstart extends Application {
-    private static String textInputFileName = "text_input.txt";
+    private static String textInput = "";
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Programmstart.class.getResource("hello-view.fxml"));
@@ -16,16 +18,19 @@ public class Programmstart extends Application {
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
+
+        scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+
+            @Override
+            public void handle(KeyEvent event) {
+                textInput += event.getCode().getChar();
+                System.out.print(event.getCode().getChar());
+            }
+        });
     }
 
+
     public static void main(String[] args) {
-        //create file to write the text input.
-        try {
-            File file = new File(textInputFileName);
-            file.createNewFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        //launch();
+        launch();
     }
 }
