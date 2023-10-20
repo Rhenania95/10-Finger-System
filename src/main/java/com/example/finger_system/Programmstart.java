@@ -7,10 +7,8 @@ import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import java.io.IOException;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 public class Programmstart extends Application {
-    private static String textInput = "";
+    private InputHandling inputHandling;
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Programmstart.class.getResource("hello-view.fxml"));
@@ -23,8 +21,10 @@ public class Programmstart extends Application {
 
             @Override
             public void handle(KeyEvent event) {
-                textInput += event.getCode().getChar();
-                System.out.print(event.getCode().getChar());
+                //if (im üebigsmenü){
+                    inputHandling.setCurrentCharTyped((event.getCharacter()).charAt(0));
+                    inputHandling.keyPressed();
+                //}
             }
         });
     }
