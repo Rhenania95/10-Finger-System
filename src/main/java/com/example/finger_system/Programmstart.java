@@ -22,10 +22,10 @@ public class Programmstart extends Application {
 
             @Override
             public void handle(KeyEvent event) {
-                //if (im üebigsmenü){
+                if (uebungsmodus.isActive()){
                     inputHandling.setCurrentCharTyped((event.getCharacter()).charAt(0));
                     inputHandling.keyPressed();
-                //}
+                }
             }
         });
     }
