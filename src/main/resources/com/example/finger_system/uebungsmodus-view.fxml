@@ -1,0 +1,12 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finger_system.Controller">
+   <children>
+      <Label layoutX="114.0" layoutY="73.0" text="Textausgabe" />
+      <TextField alignment="CENTER" layoutX="70.0" layoutY="137.0" promptText="Texteingabe" />
+   </children>
+</AnchorPane>
