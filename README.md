@@ -70,10 +70,44 @@ Alternativ kann das Programm auch von einer IDE ausgeführt werden: navigieren h
 ---
 
 # 4.) User Storys <a name="paragraph3"></a>
+| Userstory: |       Name:       |                                                                                                                                 Beschreibung: | Priorität: | Storypoints: |                                                                                          Akzeptanzkriterien: |
+|-----------|:-----------------:|----------------------------------------------------------------------------------------------------------------------------------------------:|-----------:|-------------:|-------------------------------------------------------------------------------------------------------------:|
+| Story 1   | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 2   | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 3   | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 4   | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 5   | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 6   | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 7   | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 8   | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 9   | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 10  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 11  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 12  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 13  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 14  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 15  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 16  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 17  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 18  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 19  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 20  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 21  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 22  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 23  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
+| Story 24  | Dauer der Lektion | Als Benutzer möchte ich vor dem Start der Übungslektion auswählen können, wie lange die Lektion gehen soll um meine Zeit optimal zu nutzen.   |        3   |          2   | Vor dem Start der Übung kann die Zeit eingestellt werden. Und die Lektion dauert so lange wie eingestellt.   |
 
 ---
 
 # 5) Releaseplan mit den Ausbaustufen <a name="paragraph4"></a>
+
+| Sprint 1    |  Sprint 2  |   Sprint 3 |
+|-------------|:----------:|-----------:|
+| 1           |     2      |          3 |
+| 4           |     5      |          6 |
+| 7           |     8      |          9 |
+| Velosity 17 | Velosity X | Velosity Y |
+
 
 ---
 
