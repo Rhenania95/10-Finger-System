@@ -23,22 +23,49 @@
 ---
 
 # 1.) Einführung <a name="introduction"></a>
-
 ## 1.1) Einleitung <a name="subparagraph1"></a>
-
+Im Rahmen unserer kombinierten Projektarbeit der Fächer Softwareengineering und Informatik im 3. Semester haben wir uns entschieden ein Übungstool zu programmieren, mit welchem man seine Fähigkeiten im 10 Fingersystem verbessern kann zu programmieren.
 ## 1.2) Ziele <a name="subparagraph2"></a>
-
+Das Ziel unseres Projekts ist es, ein Tool zu entwickeln um seine Fähigkeiten mit dem 10 Fingersystem zu verbessern. In einer ersten Phase soll man mit einem Übungsmodus seine Fähigkeiten verbessern können. Falls noch genügend Kapazität vorhanden ist, können auch noch Erweiterungen wie ein Spielmodus, Bestenlisten etc. erstellt werden. 
 ## 1.3) Randbedingungen <a name="subparagraph3"></a>
-
+- Die Programmierung der Anwendung erfolgt in Java.
+- Das Projekt ist auf GitHub öffentlich einsehbar.
+- Das Projekt wurde getestet.
+- Die Build-Automatisierung erfolgt mittels Gradle.
+- Das Projekt wurde mit der SCRUM Methode durchgeführt.
+- Dies beinhaltet Userstories und einen Releaseplan.
 
 ---
 
 # 2.) Build-Anleitung <a name="paragraph1"></a>
+Um das Java-Projekt "Menstrualender" zu builden und auszuführen, müssen folgendende Schritte ausgeführt werden:
 
+- Stellen Sie sicher, dass Sie Java und Maven auf Ihrem System installiert haben. Sie können prüfen, ob Java installiert ist, indem Sie java -version in der Befehlszeile ausführen, Maven indem Sie mvn --version ausführen. Um Maven zu installieren, können Sie den Installationsanweisungen auf der Maven-Website folgen: https://maven.apache.org/install.html
+- Erstellen Sie ein neues leeres Verzeichnis
+- Navigieren Sie mittels der Kommandozeile in das neue Verzeichnis mithilfe des "Change Directory" Befehles cd
+- Klonen Sie das Repository von GitHub mittels folgendem Befehl:
+```
+git clone https://github.com/Rhenania95/10-Finger-System.git
+```
+- Um das project von der Kommandozeile auszuführen geben Sie (im Verzeichnis des Projekts) folgenden Befehl ein:
+```
+mvn clean compile javafx:run
+```
+- Um ein custom image herzustellen, führen Sie folgenden Befehl aus:
+```
+mvn clean compile javafx:jlink
+```
+- Das custom image lässt sich mit folgendem Befehl ausführen:
+```
+target/app/bin/java -m com.example.10-Finger-System/com.example.10-Finger-System.Application
+```
+
+Alternativ kann das Programm auch von einer IDE ausgeführt werden: navigieren hierzu in den Ordner src/main/java und ins Package com.example.10-Finger-System und führen Sie die Klasse MensApplication aus
 
 ---
 
 # 3.) Kurze Bedienungsanleitung <a name="paragraph2"></a>
+
 
 ---
 
