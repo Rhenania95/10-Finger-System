@@ -16,7 +16,7 @@ public class Programmstart extends Application {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("hauptmenu-view.fxml"));
             Scene scene = new Scene(root);
-            stage.setTitle("Zehnfinger tipp übungs züg");
+            stage.setTitle("Tipp dich fit");
             stage.setScene(scene);
             stage.show();
         }catch (Exception e){

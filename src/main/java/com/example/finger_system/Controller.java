@@ -19,6 +19,27 @@ public class Controller {
     private Parent root;
     @FXML
     public void uebungsmodusStart(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Übungswahl.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void hauptmenu(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("hauptmenu-view.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void allese(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("uebungsmodus-view.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void neuee(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("uebungsmodus-view.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
