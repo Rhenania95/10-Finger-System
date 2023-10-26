@@ -15,18 +15,14 @@ public class Programmstart extends Application {
     public void start(Stage stage) throws IOException {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("hauptmenu-view.fxml"));
-            Scene hauptmenu = new Scene(root);
+            Scene scene = new Scene(root);
             stage.setTitle("Zehnfinger tipp übungs züg");
-            stage.setScene(hauptmenu);
+            stage.setScene(scene);
             stage.show();
         }catch (Exception e){
             e.printStackTrace();
         }
     }
-
-
-
-
     public static void main(String[] args) {
         launch();
     }
