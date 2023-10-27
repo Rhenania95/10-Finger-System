@@ -26,10 +26,10 @@ public class Programmstart extends Application {
                 public void handle(KeyEvent event) {
                     if (controller.getUebungsmodus().isActive()){
                         controller.getUebungsmodus().keyPressed((event.getCharacter()).charAt(0));
-                        while (!controller.getUebungsmodus().keyPressedCheck()) {
-                        }
-                        if(!controller.getUebungsmodus().next()){
-                            controller.getUebungsmodus().stop();
+                        if(controller.getUebungsmodus().keyPressedCheck()) {
+                            if (!controller.getUebungsmodus().next()) {
+                                controller.getUebungsmodus().stop();
+                            }
                         }
                     }
                 }
