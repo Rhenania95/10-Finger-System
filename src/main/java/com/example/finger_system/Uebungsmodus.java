@@ -20,6 +20,7 @@ public class Uebungsmodus {
         Uebung uebung = new Uebung(level, stufe, Tastatur);
         aufgabe = uebung.getAufgabe();
         aufgabeLength = aufgabe.length();
+        currentCharRequired = aufgabe.charAt(0);
     }
     public boolean isActive() {
         return active;
