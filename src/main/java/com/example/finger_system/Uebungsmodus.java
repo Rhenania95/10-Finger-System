@@ -16,8 +16,8 @@ public class Uebungsmodus {
     private int count = 0;
 
 
-    public Uebungsmodus(int stufe, int level, String Tastatur) {
-        Uebung uebung = new Uebung(stufe, level, Tastatur);
+    public Uebungsmodus(int level, int stufe, String Tastatur) {
+        Uebung uebung = new Uebung(level, stufe, Tastatur);
         aufgabe = uebung.getAufgabe();
         aufgabeLength = aufgabe.length();
     }

@@ -161,7 +161,6 @@ public class Uebung extends Modul {
 
     //Die Methode erstellt eine Aufgabe durch zufälliges Verwenden der Set-Methoden.
     private void setAufgabe() {
-        prtTasten();
         while(aufgabe.length() < 30)    {
             /*
             switch((int) (Math.random() * 4)) {
