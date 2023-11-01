@@ -9,20 +9,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finger_system.Controller">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finger_system.Controller">
    <children>
-      <GridPane prefHeight="376.0" prefWidth="624.0">
+      <GridPane prefHeight="726.0" prefWidth="1280.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.33331298828125" minWidth="10.0" prefWidth="16.333323160807293" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="561.6666965484619" minWidth="10.0" prefWidth="415.00002034505206" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="316.66668701171875" minWidth="0.0" prefWidth="76.99997965494794" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="302.6666259765625" minWidth="10.0" prefWidth="93.00004069010413" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="926.3333333333334" minWidth="10.0" prefWidth="926.3333333333334" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.3333740234374" minWidth="0.0" prefWidth="130.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="302.6666259765625" minWidth="10.0" prefWidth="130.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="3.0" minHeight="3.0" prefHeight="3.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
           <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="58.33333969116211" minHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="138.0" minHeight="0.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="0.0" minHeight="0.0" percentHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="57.999999999999986" minHeight="10.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="0.0" minHeight="0.0" percentHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
@@ -42,58 +41,149 @@
             <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="55.33331298828125" minHeight="10.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="0.0" minHeight="0.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="0.0" minHeight="0.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="3.0" minHeight="3.0" prefHeight="3.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Übungsmodus" GridPane.columnIndex="1">
                <font>
-                  <Font size="22.0" />
+                  <Font name="System Italic" size="30.0" />
                </font>
             </Text>
-            <Button fx:id="zurück" mnemonicParsing="false" onAction="#hauptmenu" prefHeight="31.0" prefWidth="69.0" text="Zurück" translateX="10.0" translateY="-5.0" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="25" GridPane.valignment="BOTTOM" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 1 :asdf" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 2: asdfjklö" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 3: " GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 4: " GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 5: " GridPane.columnIndex="1" GridPane.rowIndex="11" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 6: " GridPane.columnIndex="1" GridPane.rowIndex="13" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 7: " GridPane.columnIndex="1" GridPane.rowIndex="15" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 8: " GridPane.columnIndex="1" GridPane.rowIndex="17" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 9: " GridPane.columnIndex="1" GridPane.rowIndex="19" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 10: " GridPane.columnIndex="1" GridPane.rowIndex="21" />
-            <Line endX="575.0" startX="-25.0" GridPane.rowIndex="4" />
-            <Line endX="575.0" startX="-25.0" GridPane.rowIndex="6" />
-            <Line endX="575.0" startX="-25.0" GridPane.rowIndex="8" />
-            <Line endX="575.0" startX="-25.0" GridPane.rowIndex="10" />
-            <Line endX="575.0" startX="-25.0" GridPane.rowIndex="12" />
-            <Line endX="575.0" startX="-25.0" GridPane.rowIndex="14" />
-            <Line endX="575.0" startX="-25.0" GridPane.rowIndex="16" />
-            <Line endX="575.0" startX="-25.0" GridPane.rowIndex="18" />
-            <Line endX="575.0" startX="-25.0" GridPane.rowIndex="20" />
-            <Line endX="575.0" startX="-25.0" GridPane.rowIndex="22" />
-            <Line endX="575.0" startX="-25.0" GridPane.rowIndex="2" />
-            <Button fx:id="einstieg1" mnemonicParsing="false" onAction="#neu1" prefHeight="25.0" prefWidth="69.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button fx:id="einstieg2" mnemonicParsing="false" onAction="#neu2" prefHeight="25.0" prefWidth="69.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Button fx:id="einstieg3" mnemonicParsing="false" onAction="#neu3" prefHeight="25.0" prefWidth="69.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-            <Button fx:id="einstieg4" mnemonicParsing="false" onAction="#neu4" prefHeight="25.0" prefWidth="69.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-            <Button fx:id="einstieg5" mnemonicParsing="false" onAction="#neu5" prefHeight="25.0" prefWidth="69.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="11" />
-            <Button fx:id="einstieg6" mnemonicParsing="false" onAction="#neu6" prefHeight="25.0" prefWidth="69.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="13" />
-            <Button fx:id="einstieg7" mnemonicParsing="false" onAction="#neu7" prefHeight="25.0" prefWidth="69.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="15" />
-            <Button fx:id="einstieg8" mnemonicParsing="false" onAction="#neu8" prefHeight="25.0" prefWidth="69.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="17" />
-            <Button fx:id="einstieg9" mnemonicParsing="false" onAction="#neu9" prefHeight="25.0" prefWidth="69.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="19" />
-            <Button fx:id="einstieg10" mnemonicParsing="false" onAction="#neu10" prefHeight="25.0" prefWidth="69.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="21" />
-             <Button fx:id="vollständig1" mnemonicParsing="false" onAction="#alles1" prefHeight="25.0" prefWidth="85.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-             <Button fx:id="vollständig2" mnemonicParsing="false" onAction="#alles2" prefHeight="25.0" prefWidth="85.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <Button fx:id="vollständig3" mnemonicParsing="false" onAction="#alles3" prefHeight="25.0" prefWidth="85.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-            <Button fx:id="vollständig4" mnemonicParsing="false" onAction="#alles4" prefHeight="25.0" prefWidth="85.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="9" />
-            <Button fx:id="vollständig5" mnemonicParsing="false" onAction="#alles5" prefHeight="25.0" prefWidth="85.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="11" />
-            <Button fx:id="vollständig6" mnemonicParsing="false" onAction="#alles6" prefHeight="25.0" prefWidth="85.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="13" />
-            <Button fx:id="vollständig7" mnemonicParsing="false" onAction="#alles7" prefHeight="25.0" prefWidth="85.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="15" />
-            <Button fx:id="vollständig8" mnemonicParsing="false" onAction="#alles8" prefHeight="25.0" prefWidth="85.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="17" />
-            <Button fx:id="vollständig9" mnemonicParsing="false" onAction="#alles9" prefHeight="25.0" prefWidth="85.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="19" />
-            <Button fx:id="vollständig10" mnemonicParsing="false" onAction="#alles10" prefHeight="25.0" prefWidth="85.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="21" />
+            <Button fx:id="zurück" mnemonicParsing="false" onAction="#hauptmenu" prefHeight="40.0" prefWidth="100.0" text="Zurück" translateX="12.5" GridPane.columnIndex="3" GridPane.rowIndex="22">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 1 :asdf" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="22.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 2: asdfjklö" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="22.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 3: " GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="22.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 4: " GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font size="22.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 5: " GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <font>
+                  <Font size="22.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 6: " GridPane.columnIndex="1" GridPane.rowIndex="12">
+               <font>
+                  <Font size="22.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 7: " GridPane.columnIndex="1" GridPane.rowIndex="14">
+               <font>
+                  <Font size="22.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 8: " GridPane.columnIndex="1" GridPane.rowIndex="16">
+               <font>
+                  <Font size="22.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 9: " GridPane.columnIndex="1" GridPane.rowIndex="18">
+               <font>
+                  <Font size="22.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lektion 10: " GridPane.columnIndex="1" GridPane.rowIndex="20">
+               <font>
+                  <Font size="22.0" />
+               </font></Text>
+            <Line endX="1280.0" GridPane.rowIndex="3" />
+            <Line endX="1280.0" GridPane.rowIndex="5" />
+            <Line endX="1280.0" GridPane.rowIndex="7" />
+            <Line endX="1280.0" GridPane.rowIndex="9" />
+            <Line endX="1280.0" GridPane.rowIndex="11" />
+            <Line endX="1280.0" GridPane.rowIndex="13" />
+            <Line endX="1280.0" GridPane.rowIndex="15" />
+            <Line endX="1280.0" GridPane.rowIndex="17" />
+            <Line endX="1280.0" GridPane.rowIndex="19" />
+            <Line endX="1280.0" GridPane.rowIndex="21" />
+            <Line endX="1280.0" GridPane.rowIndex="1" />
+            <Button fx:id="einstieg1" mnemonicParsing="false" onAction="#neu1" prefHeight="40.0" prefWidth="125.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="einstieg2" mnemonicParsing="false" onAction="#neu2" prefHeight="40.0" prefWidth="125.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="einstieg3" mnemonicParsing="false" onAction="#neu3" prefHeight="40.0" prefWidth="125.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="einstieg4" mnemonicParsing="false" onAction="#neu4" prefHeight="40.0" prefWidth="125.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="einstieg5" mnemonicParsing="false" onAction="#neu5" prefHeight="40.0" prefWidth="125.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="10">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="einstieg6" mnemonicParsing="false" onAction="#neu6" prefHeight="40.0" prefWidth="125.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="12">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="einstieg7" mnemonicParsing="false" onAction="#neu7" prefHeight="40.0" prefWidth="125.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="14">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="einstieg8" mnemonicParsing="false" onAction="#neu8" prefHeight="40.0" prefWidth="125.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="16">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="einstieg9" mnemonicParsing="false" onAction="#neu9" prefHeight="40.0" prefWidth="125.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="18">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="einstieg10" mnemonicParsing="false" onAction="#neu10" prefHeight="40.0" prefWidth="125.0" text="Einstieg" GridPane.columnIndex="2" GridPane.rowIndex="20">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+             <Button fx:id="vollständig1" mnemonicParsing="false" onAction="#alles1" prefHeight="40.0" prefWidth="125.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+             <Button fx:id="vollständig2" mnemonicParsing="false" onAction="#alles2" prefHeight="40.0" prefWidth="125.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="vollständig3" mnemonicParsing="false" onAction="#alles3" prefHeight="40.0" prefWidth="125.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="vollständig4" mnemonicParsing="false" onAction="#alles4" prefHeight="40.0" prefWidth="125.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="vollständig5" mnemonicParsing="false" onAction="#alles5" prefHeight="40.0" prefWidth="125.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="10">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="vollständig6" mnemonicParsing="false" onAction="#alles6" prefHeight="40.0" prefWidth="125.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="12">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="vollständig7" mnemonicParsing="false" onAction="#alles7" prefHeight="40.0" prefWidth="125.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="14">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="vollständig8" mnemonicParsing="false" onAction="#alles8" prefHeight="40.0" prefWidth="125.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="16">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="vollständig9" mnemonicParsing="false" onAction="#alles9" prefHeight="40.0" prefWidth="125.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="18">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="vollständig10" mnemonicParsing="false" onAction="#alles10" prefHeight="40.0" prefWidth="125.0" text="Vollständig" GridPane.columnIndex="3" GridPane.rowIndex="20">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
          </children>
       </GridPane>
    </children>
