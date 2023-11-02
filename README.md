@@ -38,7 +38,7 @@ Das Ziel unseres Projekts ist es, ein Tool zu entwickeln um seine Fähigkeiten m
 ---
 
 # 2.) Build-Anleitung <a name="paragraph1"></a>
-Um das Java-Projekt "Menstrualender" zu builden und auszuführen, müssen folgendende Schritte ausgeführt werden:
+Um das Java-Projekt "10 Fingersystem" zu builden und auszuführen, müssen folgendende Schritte ausgeführt werden:
 
 - Stellen Sie sicher, dass Sie Java und Maven auf Ihrem System installiert haben. Sie können prüfen, ob Java installiert ist, indem Sie java -version in der Befehlszeile ausführen, Maven indem Sie mvn --version ausführen. Um Maven zu installieren, können Sie den Installationsanweisungen auf der Maven-Website folgen: https://maven.apache.org/install.html
 - Erstellen Sie ein neues leeres Verzeichnis
