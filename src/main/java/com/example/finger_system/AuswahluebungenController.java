@@ -7,10 +7,12 @@ import java.io.IOException;
 
 import javafx.stage.Stage;
 
-public class AuswahluebungenController extends Programmstart{
+public class AuswahluebungenController{
     private Stage stage;
     private Scene sceneUebungsmodus;
     private Scene sceneHautpmenu;
+    protected Uebungsmodus uebungsmodus;
+
     public void setStage(Stage stage) {
         this.stage = stage;
     }
@@ -20,6 +22,7 @@ public class AuswahluebungenController extends Programmstart{
     public void setSceneHautpmenu(Scene sceneHautpmenu) {
         this.sceneHautpmenu = sceneHautpmenu;
     }
+
     private void loadUebungsmodus(int level, int stufe, ActionEvent event) throws IOException {
         uebungsmodus = new Uebungsmodus(level, stufe, "QWERTZ");
         stage.setScene(sceneUebungsmodus);

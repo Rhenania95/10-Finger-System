@@ -12,7 +12,6 @@ public class Programmstart extends Application {
     private HauptmenuController hauptmenuController;
     private AuswahluebungenController auswahluebungenController;
     private UebungsmodusController uebungsmodusController;
-    protected Uebungsmodus uebungsmodus;
     @Override
     public void start(Stage stage) {
         try {
@@ -44,19 +43,18 @@ public class Programmstart extends Application {
             sceneUebungsmodus.setOnKeyPressed(new EventHandler<KeyEvent>() {
                 @Override
                 public void handle(KeyEvent event) {
-                    /*
-                    if (!uebungsmodus.isActive()) {
-                        uebungsmodus.start();
-                        uebungsmodusController.setTextausgabe(uebungsmodus.getAufgabe());
+                    System.out.println("laskjhfgoiajshfhasdgjkhasdlkjgha,sg");
+                    if (!auswahluebungenController.uebungsmodus.isActive()) {
+                        auswahluebungenController.uebungsmodus.start();
+                        uebungsmodusController.setTextausgabe(auswahluebungenController.uebungsmodus.getAufgabe());
                     }
-                    uebungsmodus.keyPressed((event.getCharacter()).charAt(0));
-                    if(uebungsmodus.keyPressedCheck()) {
-                        if(uebungsmodus.next()){
+                    auswahluebungenController.uebungsmodus.keyPressed((event.getCharacter()).charAt(0));
+                    if(auswahluebungenController.uebungsmodus.keyPressedCheck()) {
+                        if(auswahluebungenController.uebungsmodus.next()){
                         }else{
-                            uebungsmodus.stop();
+                            auswahluebungenController.uebungsmodus.stop();
                         }
                     }
-                     */
                 }
             });
 

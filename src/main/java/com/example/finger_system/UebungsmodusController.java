@@ -46,7 +46,6 @@ public class UebungsmodusController extends Programmstart {
         int time = 10;
         String levels = "Einsteiger";
         String stufe = "Alles";
-        setTextausgabe(Character.toString(uebungsmodus.getCurrentCharRequired()));
         übung.setText(nummer);
         anschläge.setText(String.valueOf(mistake));
         levelx.setText(levels);
