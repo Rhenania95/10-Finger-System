@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="726" prefWidth="1280" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finger_system.HauptmenuController">
+   <children>
+      <Button fx:id="uebungsmodusButton" layoutX="101.0" layoutY="137.0" mnemonicParsing="false" onAction="#AuswahluebungenStart" text="Übungsmodus" />
+   </children>
+</AnchorPane>

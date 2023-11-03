@@ -8,14 +8,10 @@ public class Uebungsmodus {
     private char currentCharRequired;
     private int keyPressCount = 0;
     private int wrongKeyPressedCount = 0;
-    private long timeElapsed;
-    private long startTime;
-    private boolean active;
+    private boolean active = false;
     private String aufgabe;
     private int aufgabeLength;
     private int count = 0;
-
-
     public Uebungsmodus(int level, int stufe, String Tastatur) {
         Uebung uebung = new Uebung(level, stufe, Tastatur);
         aufgabe = uebung.getAufgabe();
@@ -25,16 +21,8 @@ public class Uebungsmodus {
     public boolean isActive() {
         return active;
     }
-    public long getTimeElapsed() {
-        return timeElapsed;
-    }
-    public long getTime() {
-        return System.nanoTime() - startTime;
-    }
-
     public void start() {
         this.active = true;
-        startTime = System.nanoTime();
     }
     public boolean next() {
         count++;
@@ -58,16 +46,19 @@ public class Uebungsmodus {
     }
     public void stop() {
         this.active = false;
-        timeElapsed = System.nanoTime() - startTime;
     }
     public void wrongKeyPressed() {
         //print error
     }
-
+    public char getCurrentCharRequired() {
+        return currentCharRequired;
+    }
+    public String getAufgabe() {
+        return aufgabe;
+    }
     public int getKeyPressCount() {
         return keyPressCount;
     }
-
     public int getWrongKeyPressedCount() {
         return wrongKeyPressedCount;
     }

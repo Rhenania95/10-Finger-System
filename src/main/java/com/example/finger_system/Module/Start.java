@@ -1,11 +1,9 @@
 package com.example.finger_system.Module;
 
-import com.example.finger_system.Threading.Multithreads;
-
 public class Start {
     public static void main(String[] args) {
         //Wir erzeugen einen neuen Thread, der parallel zum main abläuft.
-        Multithreads multi = new Multithreads();
+        //Multithreads multi = new Multithreads();
         Thread modul = new Thread(new Runnable() {
         @Override
             public void run() {
