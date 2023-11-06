@@ -129,7 +129,6 @@ public class UebungsmodusController extends Programmstart {
                     zeitzener = 0;
                     zeitminuten++;
                 }
-                System.out.println(TimerauswahlController.dauer);
                 if (zeitminuten == TimerauswahlController.dauer){
                     timeline.stop();
                     stage.setScene(sceneResultatfenster);
