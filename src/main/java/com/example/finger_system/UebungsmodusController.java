@@ -27,12 +27,6 @@ public class UebungsmodusController extends Programmstart {
     private Label uebungNummer;
     @FXML
     private Label Stufe;
-    @FXML
-    private Label fehler;
-    @FXML
-    private Label zeit;
-    @FXML
-    private Label übung;
     private int fontSize = 50;
     int level = AuswahluebungenController.uebergabe[0];
     int stufe = AuswahluebungenController.uebergabe[1];
