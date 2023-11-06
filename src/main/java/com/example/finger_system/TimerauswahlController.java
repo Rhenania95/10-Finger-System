@@ -28,9 +28,9 @@ public class TimerauswahlController{
     private Label falscheEingabe;
     @FXML
     private TextField textfeld;
-    int dauer;
-    int level;
-    int stufe;
+    public static int dauer;
+    public static int level;
+    public static int stufe;
     public void timereingabeprüfen(ActionEvent event) throws IOException{
         try {
             dauer = Integer.parseInt(textfeld.getText());
