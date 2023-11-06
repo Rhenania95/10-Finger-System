@@ -64,13 +64,14 @@ public class Programmstart extends Application {
                 public void handle(KeyEvent event) {
                     if (!timerauswahlController.uebungsmodus.isActive()) {
                         timerauswahlController.uebungsmodus.start();
-                        uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getAufgabe());
-                    }
-                    timerauswahlController.uebungsmodus.keyPressed((event.getCharacter()).charAt(0));
-                    if(timerauswahlController.uebungsmodus.keyPressedCheck()) {
-                        if(timerauswahlController.uebungsmodus.next()){
-                        }else{
-                            timerauswahlController.uebungsmodus.stop();
+                        uebungsmodusController.setTextausgabe("","",timerauswahlController.uebungsmodus.getAufgabe(),true);
+                    }else {
+                        timerauswahlController.uebungsmodus.keyPressed((event.getText().charAt(0)));
+                        if (timerauswahlController.uebungsmodus.keyPressedCheck()) {
+                            timerauswahlController.uebungsmodus.next();
+                            uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), true);
+                        } else {
+                            uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), false);
                         }
                     }
                 }

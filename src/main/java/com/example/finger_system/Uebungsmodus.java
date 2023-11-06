@@ -10,27 +10,51 @@ public class Uebungsmodus {
     private int wrongKeyPressedCount = 0;
     private boolean active = false;
     private String aufgabe;
+    private String charsTyped = "";
+    private String charsLeft;
     private int aufgabeLength;
     private int count = 0;
+    private int level;
+    private int stufe;
+    private String Tastatur;
     public Uebungsmodus(int level, int stufe, String Tastatur) {
+        this.level = level;
+        this.stufe = stufe;
+        this.Tastatur = Tastatur;
         Uebung uebung = new Uebung(level, stufe, Tastatur);
         aufgabe = uebung.getAufgabe();
         aufgabeLength = aufgabe.length();
         currentCharRequired = aufgabe.charAt(0);
+        charsLeft = aufgabe.substring(1);
     }
+    public String getCharsTyped() {
+        return charsTyped;
+    }
+
+    public String getCharsLeft() {
+        return charsLeft;
+    }
+
     public boolean isActive() {
         return active;
     }
     public void start() {
         this.active = true;
     }
-    public boolean next() {
+    public void next() {
         count++;
         if (count < aufgabeLength) {
             currentCharRequired = aufgabe.charAt(count);
-            return true;
+            charsTyped += currentCharTyped;
+            charsLeft = aufgabe.substring(count+1);
         }else{
-            return false;
+            Uebung uebung = new Uebung(level, stufe, Tastatur);
+            aufgabe = uebung.getAufgabe();
+            aufgabeLength = aufgabe.length();
+            currentCharRequired = aufgabe.charAt(0);
+            charsTyped = "";
+            charsLeft = aufgabe.substring(1);
+            count = 0;
         }
     }
     public void keyPressed(char currentCharTyped) {
@@ -43,12 +67,6 @@ public class Uebungsmodus {
             return false;
         }
         return true;
-    }
-    public void stop() {
-        this.active = false;
-    }
-    public void wrongKeyPressed() {
-        //print error
     }
     public char getCurrentCharRequired() {
         return currentCharRequired;
