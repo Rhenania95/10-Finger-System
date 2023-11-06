@@ -1,17 +1,19 @@
 package com.example.finger_system;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
-
+import javafx.util.Duration;
 import java.io.IOException;
 
 public class UebungsmodusController extends Programmstart {
@@ -27,14 +29,19 @@ public class UebungsmodusController extends Programmstart {
     private Label uebungNummer;
     @FXML
     private Label Stufe;
+    @FXML
+    private Label zeitausgabe;
+    int zeiteiner = 0;
+    int zeitzener = 0;
+    int zeitminuten = 0;
     private int fontSize = 50;
     int level = AuswahluebungenController.uebergabe[0];
     int stufe = AuswahluebungenController.uebergabe[1];
+
+
     public void setStage(Stage stage) {
         this.stage = stage;
         uebungNummer.setText(String.valueOf(level));
-        System.out.println(AuswahluebungenController.uebergabe[0]);
-        System.out.println(AuswahluebungenController.uebergabe[1]);
         if (stufe == 1) {
             Stufe.setText("lernen");
         }
@@ -48,6 +55,7 @@ public class UebungsmodusController extends Programmstart {
     }
     @FXML
     public void setTextausgabe(String charsTyped, String currentCharRequired, String charsLeft, boolean correct) {
+        start(stage);
         TextFlow textFlowPane = new TextFlow();
         Text charsTypedText = new Text(charsTyped);
         charsTypedText.setFill(Color.GREEN);
@@ -100,4 +108,46 @@ public class UebungsmodusController extends Programmstart {
             alert.close();
         }
     }
+    @Override
+    public void start(Stage stage) {
+        // Erstelle eine neue Timeline
+        Timeline timeline = new Timeline();
+
+        // Setze die Dauer zwischen den Aktionen
+        Duration duration = Duration.seconds(1);
+
+        // Füge einen KeyFrame zur Timeline hinzu, der die Aktion definiert
+        KeyFrame keyFrame = new KeyFrame(duration, new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                zeiteiner++;
+                if (zeiteiner == 10){
+                    zeiteiner = 0;
+                    zeitzener++;
+                }
+                if (zeitzener == 6){
+                    zeitzener = 0;
+                    zeitminuten++;
+                }
+                System.out.println(TimerauswahlController.dauer);
+                if (zeitminuten == TimerauswahlController.dauer){
+                    timeline.stop();
+                    stage.setScene(sceneResultatfenster);
+                    fehlerAusgabe.setText("0");
+                    anschlägeAusgabe.setText("0");
+                    zeitausgabe.setText("0:00");
+                }
+                String ausgabe = String.valueOf(zeitminuten) + ":" + String.valueOf(zeitzener) + String.valueOf(zeiteiner);
+                zeitausgabe.setText(ausgabe);
+            }
+        });
+        // Füge den KeyFrame zur Timeline hinzu
+        timeline.getKeyFrames().add(keyFrame);
+
+        // Setze die Anzahl der Wiederholungen (hier unendlich)
+        timeline.setCycleCount(Timeline.INDEFINITE);
+
+        // Starte die Timeline
+        timeline.play();
+}
 }
