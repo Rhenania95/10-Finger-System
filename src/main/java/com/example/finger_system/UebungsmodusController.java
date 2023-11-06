@@ -74,11 +74,16 @@ public class UebungsmodusController extends Programmstart {
         alert.setHeaderText("Wollen Sie die Übung wirklich abbrechen?");
         alert.showAndWait();
         if (alert.getResult().getText().equals("OK")) {
+            TextFlow textFlowPane = new TextFlow();
+            Text restartText = new Text("Tastendruck startet die Übung");
+            restartText.setFill(Color.BLACK);
+            restartText.setFont(Font.font(fontSize));
+            textFlowPane.getChildren().add(restartText);
+            textAusgabe.setGraphic(textFlowPane);
             stage.setScene(sceneResultatfenster);
         }
         if (alert.getResult().getText().equals("Abbrechen")) {
             alert.close();
         }
-        textAusgabe.setText("Tastendruck startet die Übung");
     }
 }
