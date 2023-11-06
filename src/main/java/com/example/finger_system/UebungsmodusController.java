@@ -55,7 +55,9 @@ public class UebungsmodusController extends Programmstart {
     }
     @FXML
     public void setTextausgabe(String charsTyped, String currentCharRequired, String charsLeft, boolean correct) {
-        start(stage);
+        if (currentCharRequired.isEmpty()) {
+            start(stage);
+        }
         TextFlow textFlowPane = new TextFlow();
         Text charsTypedText = new Text(charsTyped);
         charsTypedText.setFill(Color.GREEN);
@@ -132,9 +134,6 @@ public class UebungsmodusController extends Programmstart {
                 if (zeitminuten == TimerauswahlController.dauer){
                     timeline.stop();
                     stage.setScene(sceneResultatfenster);
-                    fehlerAusgabe.setText("0");
-                    anschlägeAusgabe.setText("0");
-                    zeitausgabe.setText("0:00");
                 }
                 String ausgabe = String.valueOf(zeitminuten) + ":" + String.valueOf(zeitzener) + String.valueOf(zeiteiner);
                 zeitausgabe.setText(ausgabe);
