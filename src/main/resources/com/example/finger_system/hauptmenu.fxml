@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="508.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finger_system.HauptmenuController">
+   <children>
+      <ImageView fitHeight="726.0" fitWidth="1280.0">
+         <image>
+            <Image url="@../../../Image/clavierfond.jpg" />
+         </image>
+      </ImageView>
+      <Pane accessibleRole="PAGE_ITEM" layoutX="52.0" opacity="0.84" prefHeight="726.0" prefWidth="300.0" style="-fx-background-color: #79f8f8;">
+         <children>
+            <Button fx:id="uebungsmodusButton" layoutY="292.0" mnemonicParsing="false" onAction="#auswahlStart" prefHeight="60.0" prefWidth="300.0" styleClass="Buttonbrillance.css" stylesheets="@Buttonbrillance.css" text="Übungsmodus" textAlignment="CENTER" textFill="#059fff">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="161.0" prefHeight="33.0" prefWidth="300.0" text="Herzlich Willkommen">
+               <font>
+                  <Font name="Berlin Sans FB" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="testmodus" layoutY="352.0" mnemonicParsing="false" onAction="#testmodusStart" prefHeight="60.0" prefWidth="300.0" styleClass="Buttonbrillance.css" stylesheets="@Buttonbrillance.css" text="Testmodus" textAlignment="CENTER" textFill="#059fff">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button fx:id="spielmodus" layoutY="412.0" mnemonicParsing="false" onAction="#spielmodusStart" prefHeight="60.0" prefWidth="300.0" styleClass="Buttonbrillance.css" stylesheets="@Buttonbrillance.css" text="Spielmodus" textAlignment="CENTER" textFill="#059fff">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button fx:id="credits" layoutY="592.0" mnemonicParsing="false" onAction="#creditsStart" prefHeight="60.0" prefWidth="300.0" styleClass="Buttonbrillance.css" stylesheets="@Buttonbrillance.css" text="Credits" textAlignment="CENTER" textFill="#059fff">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button fx:id="exitbutton" layoutY="652.0" mnemonicParsing="false" onAction="#exitStart" prefHeight="60.0" prefWidth="300.0" styleClass="Buttonbrillance.css" stylesheets="@Buttonbrillance.css" text="Beenden" textAlignment="CENTER" textFill="#059fff">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button fx:id="spielmodus1" layoutY="472.0" mnemonicParsing="false" onAction="#statistikStart" prefHeight="60.0" prefWidth="300.0" styleClass="Buttonbrillance.css" stylesheets="@Buttonbrillance.css" text="Statistiken" textAlignment="CENTER" textFill="#059fff">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button fx:id="spielmodus2" layoutY="532.0" mnemonicParsing="false" onAction="#einstellungStart" prefHeight="60.0" prefWidth="300.0" styleClass="Buttonbrillance.css" stylesheets="@Buttonbrillance.css" text="Einstellungen" textAlignment="CENTER" textFill="#059fff">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="225.0" prefHeight="44.0" prefWidth="300.0" text="Tipp dich fit!" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="40.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="194.0" prefHeight="31.0" prefWidth="300.0" text="zu" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="180.0" layoutX="61.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../Image/Trinat.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

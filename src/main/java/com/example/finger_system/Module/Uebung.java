@@ -6,29 +6,29 @@ import java.nio.charset.StandardCharsets;
 public class Uebung extends Modul {
 
     /* Jede Übung besitzt ein Level, dass unterscheidet, welche Tasten in der Übung verwendet werden.
-    *  Rückgabe mittels getLevel().
-    *  Seten mittels setLevel().
+     *  Rückgabe mittels getLevel().
+     *  Seten mittels setLevel().
      */
     private int Level;
 
 
     /* Je nach Tastatur unterschiedet sich die Verteilung der Buchstaben auf der Tastatut.
-    *  Das Attrbut dient zur Unterscheidung der verschiedenen Tastaturen.
-    *  Unterschiedliche Tastaturen haben jeweils anders aufgebaute Levels.
-    *  Rückgabe mittels getTastatur().
-    *  Setzen mittels setTastatur().
-    *
-    * Implementierte Tastaturen:
-    *  "QWERTZ" für QWERTZ Tastatur
-    *
+     *  Das Attrbut dient zur Unterscheidung der verschiedenen Tastaturen.
+     *  Unterschiedliche Tastaturen haben jeweils anders aufgebaute Levels.
+     *  Rückgabe mittels getTastatur().
+     *  Setzen mittels setTastatur().
+     *
+     * Implementierte Tastaturen:
+     *  "QWERTZ" für QWERTZ Tastatur
+     *
      */
     private String Tastatur;
 
     /* Der String enthält die Tasten für die Übung.
-    *  Wird im Konstruktor mit der Methode Buchstabenset() anhand der Attribute Level, Stufe und Tastatur erstellt.
-    *  Rückgabe mittels getTasten().
-    *  Setzen mittels setTasten().
-    *  Ausgabe mittels prtTasten().
+     *  Wird im Konstruktor mit der Methode Buchstabenset() anhand der Attribute Level, Stufe und Tastatur erstellt.
+     *  Rückgabe mittels getTasten().
+     *  Setzen mittels setTasten().
+     *  Ausgabe mittels prtTasten().
      */
     private String Tasten = null;
 
@@ -41,8 +41,8 @@ public class Uebung extends Modul {
     private int Stufe;
 
     /* Die Aufgabe wird auf dem Bildschirm dargestellt und soll abgetippt werden.
-    *  Rückgabe mittels getAufgabe().
-    *  Setzen mittels setAufgabe().
+     *  Rückgabe mittels getAufgabe().
+     *  Setzen mittels setAufgabe().
      */
     private String aufgabe = "";
 
@@ -175,7 +175,7 @@ public class Uebung extends Modul {
                     break;
                 case 3:
                 */
-                    zufallsSet();
+            zufallsSet();
                   /*
                   break;
             }

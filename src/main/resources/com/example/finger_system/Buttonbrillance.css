@@ -1,0 +1,16 @@
+/* Style pour le bouton */
+.button {
+    -fx-background-color: transparent; /* Fond transparent */
+    -fx-text-fill: black; /* Couleur du texte par défaut */
+    -fx-border-color: transparent; /* Couleur du contour */
+    -fx-border-width: 2px; /* Largeur du contour */
+    -fx-border-radius: 5px; /* Rayon du contour (bords arrondis) */
+    -fx-padding: 10px 20px; /* Espacement interne */
+}
+
+/* Surbrillance du contour et du texte lorsqu'il est survolé */
+.button:hover {
+    -fx-border-color: black; /* Nouvelle couleur du contour lorsqu'il est survolé */
+    -fx-text-fill: red; /* Nouvelle couleur du texte lorsqu'il est survolé */
+}
+

@@ -15,7 +15,7 @@
       <GridPane BorderPane.alignment="CENTER">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1056.0" minWidth="10.0" prefWidth="1056.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="20000.0" minWidth="10.0" prefWidth="1056.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -23,14 +23,14 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label fx:id="übung" text="Übung " translateY="-40.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+            <Label fx:id="uebungNummer" text="Nummer" translateX="120.0" translateY="-40.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                <font>
                   <Font size="48.0" />
                </font>
             </Label>
-            <Label fx:id="textausgabe" text="TEXTEINGABE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Label fx:id="textausgabe" text="Tastendruck startet die Übung" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
-                  <Font size="96.0" />
+                  <Font size="92.0" />
                </font>
             </Label>
             <Button fx:id="abbruch" mnemonicParsing="false" onAction="#abbruchbutton" text="Abbruch" translateX="-20.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
@@ -38,52 +38,52 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="laden" mnemonicParsing="false" onAction="#refresh" text="refresh" translateX="-200.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Button>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anschläge:" translateX="900.0" translateY="-25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anschläge:" translateX="1090.0" translateY="-25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                <font>
                   <Font size="30.0" />
                </font>
             </Text>
-            <Label fx:id="anschläge" text="Anschläge" translateX="900.0" translateY="25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+            <Label fx:id="anschlägeausgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="143.0" text="0" textAlignment="RIGHT" translateX="1090.0" translateY="25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
-            <Label fx:id="levelx" text="Level" translateY="40.0" GridPane.columnIndex="1">
+            <Label fx:id="Stufe" text="Level" translateY="40.0" GridPane.columnIndex="1">
                <font>
                   <Font size="48.0" />
                </font>
             </Label>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fehler:" translateX="750.0" translateY="-25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fehler:" translateX="940.0" translateY="-25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                <font>
                   <Font size="30.0" />
                </font>
             </Text>
-            <Label fx:id="fehler" text="Fehler" translateX="750.0" translateY="25.0" GridPane.columnIndex="1">
+            <Label fx:id="fehlerausgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="131.0" text="0" textAlignment="RIGHT" translateX="940.0" translateY="25.0" GridPane.columnIndex="1">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
-            <Label fx:id="zeit" text="Zeit" translateX="600.0" translateY="25.0" GridPane.columnIndex="1">
+            <Label fx:id="zeitausgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="135.0" text="0:00" textAlignment="RIGHT" translateX="790.0" translateY="25.0" GridPane.columnIndex="1">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Zeit:" translateX="600.0" translateY="-25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Zeit:" translateX="790.0" translateY="-25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                <font>
                   <Font size="30.0" />
                </font>
             </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="590.0" translateY="-25.0" width="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="590.0" translateY="25.0" width="150.0" GridPane.columnIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="760.0" translateY="25.0" width="150.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="760.0" translateY="-25.0" width="150.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="910.0" translateY="-25.0" width="160.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="910.0" translateY="25.0" width="160.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="780.0" translateY="-25.0" width="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="780.0" translateY="25.0" width="150.0" GridPane.columnIndex="1" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="950.0" translateY="25.0" width="150.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="950.0" translateY="-25.0" width="150.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="1100.0" translateY="-25.0" width="160.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="1100.0" translateY="25.0" width="160.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Level" translateY="-40.0" GridPane.columnIndex="1">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
          </children>
       </GridPane>
    </center>

@@ -18,7 +18,22 @@ public class HauptmenuController extends Parent {
         this.sceneAuswahluebungen = sceneAuswahluebungen;
     }
     @FXML
-    public void AuswahluebungenStart(ActionEvent event) throws IOException {
+    public void auswahlStart(ActionEvent event) throws IOException {
         stage.setScene(sceneAuswahluebungen);
     }
+    public void testmodusStart(ActionEvent event) throws IOException {
+    }
+    public void spielmodusStart(ActionEvent event) throws IOException {
+    }
+    public void creditsStart(ActionEvent event) throws IOException {
+    }
+    public void statistikStart(ActionEvent event) throws IOException {
+    }
+    public void einstellungStart(ActionEvent event) throws IOException {
+    }
+    public void exitStart(ActionEvent event) throws IOException {
+        System.exit(0);
+    }
+
+
 }
