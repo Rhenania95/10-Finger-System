@@ -15,6 +15,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class UebungsmodusController extends Programmstart {
+    @FXML
+    private Label anschlägeAusgabe;
+    @FXML
+    private Label fehlerAusgabe;
     private Stage stage;
     private Scene sceneResultatfenster;
     @FXML
@@ -29,7 +33,7 @@ public class UebungsmodusController extends Programmstart {
     private Label zeit;
     @FXML
     private Label übung;
-    private int fontSize = 80;
+    private int fontSize = 50;
     int level = AuswahluebungenController.uebergabe[0];
     int stufe = AuswahluebungenController.uebergabe[1];
     public void setStage(Stage stage) {
@@ -48,6 +52,7 @@ public class UebungsmodusController extends Programmstart {
     public void setSceneResultatfenster(Scene sceneResultatfenster) {
         this.sceneResultatfenster = sceneResultatfenster;
     }
+    @FXML
     public void setTextausgabe(String charsTyped, String currentCharRequired, String charsLeft, boolean correct) {
         TextFlow textFlowPane = new TextFlow();
         Text charsTypedText = new Text(charsTyped);
@@ -67,6 +72,19 @@ public class UebungsmodusController extends Programmstart {
         textAusgabe.setText("");
         textAusgabe.setGraphic(textFlowPane);
     }
+    private void easteregg(Label label, int n) {
+        if(n==69){
+            label.setText("nice");
+        }else {
+            label.setText(String.valueOf(n));
+        }
+    }
+    public void setAnschlägeAusgabe(int n) {
+        easteregg(anschlägeAusgabe, n);
+    }
+    public void setFehlerAusgabe(int n) {
+        easteregg(fehlerAusgabe, n);
+    }
     @FXML
     public void abbruchbutton(ActionEvent event) throws IOException {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -81,6 +99,8 @@ public class UebungsmodusController extends Programmstart {
             textFlowPane.getChildren().add(restartText);
             textAusgabe.setGraphic(textFlowPane);
             stage.setScene(sceneResultatfenster);
+            fehlerAusgabe.setText("0");
+            anschlägeAusgabe.setText("0");
         }
         if (alert.getResult().getText().equals("Abbrechen")) {
             alert.close();

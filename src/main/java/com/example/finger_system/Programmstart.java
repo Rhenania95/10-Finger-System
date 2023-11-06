@@ -73,6 +73,8 @@ public class Programmstart extends Application {
                         } else {
                             uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), false);
                         }
+                        uebungsmodusController.setAnschlägeAusgabe(timerauswahlController.uebungsmodus.getKeyPressCount());
+                        uebungsmodusController.setFehlerAusgabe(timerauswahlController.uebungsmodus.getWrongKeyPressedCount());
                     }
                 }
             });

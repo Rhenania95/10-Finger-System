@@ -43,7 +43,7 @@
                   <Font size="30.0" />
                </font>
             </Text>
-            <Label fx:id="anschlägeausgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="143.0" text="0" textAlignment="RIGHT" translateX="1090.0" translateY="25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+            <Label fx:id="anschlägeAusgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="143.0" text="0" textAlignment="RIGHT" translateX="1090.0" translateY="25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                <font>
                   <Font size="30.0" />
                </font>
@@ -58,7 +58,7 @@
                   <Font size="30.0" />
                </font>
             </Text>
-            <Label fx:id="fehlerausgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="131.0" text="0" textAlignment="RIGHT" translateX="940.0" translateY="25.0" GridPane.columnIndex="1">
+            <Label fx:id="fehlerAusgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="131.0" text="0" textAlignment="RIGHT" translateX="940.0" translateY="25.0" GridPane.columnIndex="1">
                <font>
                   <Font size="30.0" />
                </font>
