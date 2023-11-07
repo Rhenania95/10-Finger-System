@@ -79,7 +79,11 @@ public class UebungsmodusController extends Programmstart {
     private void easteregg(Label label, int n) {
         if(n==69){
             label.setText("nice");
-        }else {
+        }
+        if (n == 420) {
+            label.setText("snoop dog");
+        }
+        else {
             label.setText(String.valueOf(n));
         }
     }
@@ -89,6 +93,20 @@ public class UebungsmodusController extends Programmstart {
     public void setFehlerAusgabe(int n) {
         easteregg(fehlerAusgabe, n);
     }
+    private void reset(){
+        TextFlow textFlowPane = new TextFlow();
+        Text restartText = new Text("Tastendruck startet die Übung");
+        restartText.setFill(Color.BLACK);
+        restartText.setFont(Font.font(fontSize));
+        textFlowPane.getChildren().add(restartText);
+        textAusgabe.setGraphic(textFlowPane);
+        stage.setScene(sceneResultatfenster);
+        fehlerAusgabe.setText("0");
+        anschlägeAusgabe.setText("0");
+        zeiteiner = 0;
+        zeitzener = 0;
+        zeitminuten = 0;
+    }
     @FXML
     public void abbruchbutton(ActionEvent event) throws IOException {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -96,15 +114,7 @@ public class UebungsmodusController extends Programmstart {
         alert.setHeaderText("Wollen Sie die Übung wirklich abbrechen?");
         alert.showAndWait();
         if (alert.getResult().getText().equals("OK")) {
-            TextFlow textFlowPane = new TextFlow();
-            Text restartText = new Text("Tastendruck startet die Übung");
-            restartText.setFill(Color.BLACK);
-            restartText.setFont(Font.font(fontSize));
-            textFlowPane.getChildren().add(restartText);
-            textAusgabe.setGraphic(textFlowPane);
-            stage.setScene(sceneResultatfenster);
-            fehlerAusgabe.setText("0");
-            anschlägeAusgabe.setText("0");
+            reset();
         }
         if (alert.getResult().getText().equals("Abbrechen")) {
             alert.close();
@@ -133,7 +143,7 @@ public class UebungsmodusController extends Programmstart {
                 }
                 if (zeitminuten == TimerauswahlController.dauer){
                     timeline.stop();
-                    stage.setScene(sceneResultatfenster);
+                    reset();
                 }
                 String ausgabe = String.valueOf(zeitminuten) + ":" + String.valueOf(zeitzener) + String.valueOf(zeiteiner);
                 zeitausgabe.setText(ausgabe);
