@@ -17,6 +17,7 @@ public class ResultatfensterController {
         this.sceneHauptmenu = sceneHauptmenu;
 
     }
+
     @FXML
     public void StartHauptmenu(ActionEvent event) throws IOException {
         stage.setScene(sceneHauptmenu);

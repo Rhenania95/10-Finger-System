@@ -65,20 +65,21 @@ public class Programmstart extends Application {
                     if (!timerauswahlController.uebungsmodus.isActive()) {
                         timerauswahlController.uebungsmodus.start();
                         uebungsmodusController.setTextausgabe("","",timerauswahlController.uebungsmodus.getAufgabe(),true);
+                        uebungsmodusController.start(stage);
                     }else {
-                        timerauswahlController.uebungsmodus.keyPressed((event.getText().charAt(0)));
-                        if (timerauswahlController.uebungsmodus.keyPressedCheck()) {
-                            timerauswahlController.uebungsmodus.next();
-                            uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), true);
-                        } else {
-                            uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), false);
+                            timerauswahlController.uebungsmodus.keyPressed((event.getText().charAt(0)));
+                            System.out.println(event.getSource());
+                            if (timerauswahlController.uebungsmodus.keyPressedCheck()) {
+                                timerauswahlController.uebungsmodus.next();
+                                uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), true);
+                            } else {
+                                uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), false);
+                            }
+                            uebungsmodusController.setAnschlägeAusgabe(timerauswahlController.uebungsmodus.getKeyPressCount());
+                            uebungsmodusController.setFehlerAusgabe(timerauswahlController.uebungsmodus.getWrongKeyPressedCount());
                         }
-                        uebungsmodusController.setAnschlägeAusgabe(timerauswahlController.uebungsmodus.getKeyPressCount());
-                        uebungsmodusController.setFehlerAusgabe(timerauswahlController.uebungsmodus.getWrongKeyPressedCount());
                     }
-                }
             });
-
             stage.setScene(sceneHauptmenu);
             stage.setTitle("Tipp dich fitt");
             stage.show();

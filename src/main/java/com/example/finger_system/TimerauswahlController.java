@@ -13,6 +13,7 @@ public class TimerauswahlController{
     private Scene sceneUebungsmodus;
     private Scene sceneAuswahluebungen;
     protected Uebungsmodus uebungsmodus;
+
     public void setStage(Stage stage) {
         this.stage = stage;
     }

@@ -37,7 +37,7 @@ public class UebungsmodusController extends Programmstart {
     private int fontSize = 50;
     int level = AuswahluebungenController.uebergabe[0];
     int stufe = AuswahluebungenController.uebergabe[1];
-
+    private Timeline timeline = new Timeline();
 
     public void setStage(Stage stage) {
         this.stage = stage;
@@ -55,9 +55,6 @@ public class UebungsmodusController extends Programmstart {
     }
     @FXML
     public void setTextausgabe(String charsTyped, String currentCharRequired, String charsLeft, boolean correct) {
-        if (currentCharRequired.isEmpty()) {
-            start(stage);
-        }
         TextFlow textFlowPane = new TextFlow();
         Text charsTypedText = new Text(charsTyped);
         charsTypedText.setFill(Color.GREEN);
@@ -103,28 +100,30 @@ public class UebungsmodusController extends Programmstart {
         stage.setScene(sceneResultatfenster);
         fehlerAusgabe.setText("0");
         anschlägeAusgabe.setText("0");
+        timeline.stop();
+        timeline.getKeyFrames().clear();
         zeiteiner = 0;
         zeitzener = 0;
         zeitminuten = 0;
+        zeitausgabe.setText("0:00");
     }
     @FXML
     public void abbruchbutton(ActionEvent event) throws IOException {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Wirklich abbrechen?");
         alert.setHeaderText("Wollen Sie die Übung wirklich abbrechen?");
+        timeline.pause();
         alert.showAndWait();
         if (alert.getResult().getText().equals("OK")) {
             reset();
         }
         if (alert.getResult().getText().equals("Abbrechen")) {
             alert.close();
+            timeline.play();
         }
     }
     @Override
     public void start(Stage stage) {
-        // Erstelle eine neue Timeline
-        Timeline timeline = new Timeline();
-
         // Setze die Dauer zwischen den Aktionen
         Duration duration = Duration.seconds(1);
 
@@ -142,7 +141,6 @@ public class UebungsmodusController extends Programmstart {
                     zeitminuten++;
                 }
                 if (zeitminuten == TimerauswahlController.dauer){
-                    timeline.stop();
                     reset();
                 }
                 String ausgabe = String.valueOf(zeitminuten) + ":" + String.valueOf(zeitzener) + String.valueOf(zeiteiner);
