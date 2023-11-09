@@ -17,7 +17,6 @@ public class AuswahluebungenController extends Programmstart {
     }
     public void setSceneTimerauswahl(Scene sceneTimerauswahl) {
         this.sceneTimerauswahl = sceneTimerauswahl;}
-
     @FXML
     private void Starthauptmenu(ActionEvent event) throws IOException {
         stage.setScene(sceneHautpmenu);
