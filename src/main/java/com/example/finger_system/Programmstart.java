@@ -65,7 +65,7 @@ public class Programmstart extends Application {
                 public void handle(KeyEvent event) {
                     if (!timerauswahlController.uebungsmodus.isActive()) {
                         timerauswahlController.uebungsmodus.start();
-                        uebungsmodusController.setTextausgabe("","",timerauswahlController.uebungsmodus.getAufgabe(),true);
+                        uebungsmodusController.setTextausgabe(" "," ",timerauswahlController.uebungsmodus.getAufgabe(),true);
                         uebungsmodusController.start(stage);
                     }else {
                             timerauswahlController.uebungsmodus.keyPressed((event.getText().charAt(0)));

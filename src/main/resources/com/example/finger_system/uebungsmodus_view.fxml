@@ -14,514 +14,441 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0"
-            prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.finger_system.UebungsmodusController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finger_system.UebungsmodusController">
     <center>
         <GridPane BorderPane.alignment="CENTER">
             <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0"/>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20000.0" minWidth="10.0" prefWidth="1056.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20000.0" minWidth="10.0" prefWidth="1056.0" />
             </columnConstraints>
             <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Label fx:id="uebungNummer" text="Nummer" translateX="120.0" translateY="-40.0" GridPane.columnIndex="1"
-                       GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                <Label fx:id="uebungNummer" text="Nummer" translateX="120.0" translateY="-40.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                     <font>
-                        <Font size="48.0"/>
+                        <Font size="48.0" />
                     </font>
                 </Label>
-                <Label fx:id="textAusgabe" text="Tastendruck startet die Übung" GridPane.columnIndex="1"
-                       GridPane.rowIndex="1">
+                <Label fx:id="textAusgabe" text="Tastendruck startet die Übung" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <font>
-                        <Font size="92.0"/>
+                        <Font size="92.0" />
                     </font>
                 </Label>
-                <Button fx:id="abbruch" focusTraversable="false" mnemonicParsing="false" onAction="#abbruchbutton"
-                        style="-fx-background-color: #f4cccc;" styleClass="Buttonbrilliance.css"
-                        stylesheets="@Buttonbrillance.css" text="Abbruch" translateX="-50.0" translateY="30.0"
-                        GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anschläge:" translateX="1090.0" translateY="-25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                     <font>
-                        <Font size="24.0"/>
-                    </font>
-                    <effect>
-                        <Glow/>
-                    </effect>
-                </Button>
-                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anschläge:" translateX="1090.0" translateY="-25.0"
-                      GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
-                    <font>
-                        <Font size="30.0"/>
+                        <Font size="30.0" />
                     </font>
                 </Text>
-                <Label fx:id="anschlägeAusgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="143.0" text="0"
-                       textAlignment="RIGHT" translateX="1090.0" translateY="25.0" GridPane.columnIndex="1"
-                       GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                <Label fx:id="anschlägeAusgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="143.0" text="0" textAlignment="RIGHT" translateX="1090.0" translateY="25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                     <font>
-                        <Font size="30.0"/>
+                        <Font size="30.0" />
                     </font>
                 </Label>
                 <Label fx:id="Stufe" text="Level" translateY="40.0" GridPane.columnIndex="1">
                     <font>
-                        <Font size="48.0"/>
+                        <Font size="48.0" />
                     </font>
                 </Label>
-                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fehler:" translateX="940.0" translateY="-25.0"
-                      GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fehler:" translateX="940.0" translateY="-25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                     <font>
-                        <Font size="30.0"/>
+                        <Font size="30.0" />
                     </font>
                 </Text>
-                <Label fx:id="fehlerAusgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="131.0" text="0"
-                       textAlignment="RIGHT" translateX="940.0" translateY="25.0" GridPane.columnIndex="1">
+                <Label fx:id="fehlerAusgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="131.0" text="0" textAlignment="RIGHT" translateX="940.0" translateY="25.0" GridPane.columnIndex="1">
                     <font>
-                        <Font size="30.0"/>
+                        <Font size="30.0" />
                     </font>
                 </Label>
-                <Label fx:id="zeitausgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="135.0" text="0:00"
-                       textAlignment="RIGHT" translateX="790.0" translateY="25.0" GridPane.columnIndex="1">
+                <Label fx:id="zeitausgabe" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="135.0" text="0:00" textAlignment="RIGHT" translateX="790.0" translateY="25.0" GridPane.columnIndex="1">
                     <font>
-                        <Font size="30.0"/>
+                        <Font size="30.0" />
                     </font>
                 </Label>
-                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Zeit:" translateX="790.0" translateY="-25.0"
-                      GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Zeit:" translateX="790.0" translateY="-25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                     <font>
-                        <Font size="30.0"/>
+                        <Font size="30.0" />
                     </font>
                 </Text>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK"
-                           strokeType="INSIDE" translateX="780.0" translateY="-25.0" width="150.0"
-                           GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER"/>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK"
-                           strokeType="INSIDE" translateX="780.0" translateY="25.0" width="150.0"
-                           GridPane.columnIndex="1"/>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK"
-                           strokeType="INSIDE" translateX="950.0" translateY="25.0" width="150.0"/>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK"
-                           strokeType="INSIDE" translateX="950.0" translateY="-25.0" width="150.0"/>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK"
-                           strokeType="INSIDE" translateX="1100.0" translateY="-25.0" width="160.0"/>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK"
-                           strokeType="INSIDE" translateX="1100.0" translateY="25.0" width="160.0"/>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="780.0" translateY="-25.0" width="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="780.0" translateY="25.0" width="150.0" GridPane.columnIndex="1" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="950.0" translateY="25.0" width="150.0" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="950.0" translateY="-25.0" width="150.0" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="1100.0" translateY="-25.0" width="160.0" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="1100.0" translateY="25.0" width="160.0" />
                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Level" translateY="-40.0" GridPane.columnIndex="1">
                     <font>
-                        <Font size="48.0"/>
+                        <Font size="48.0" />
                     </font>
                 </Text>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                     <children>
-                        <ImageView fx:id="bildlvl1" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="bildlvl1" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/fj_start.png"/>
+                                <Image url="@../../../Image/fj_start.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="bildlvl2" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="bildlvl2" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/dk_start.png"/>
+                                <Image url="@../../../Image/dk_start.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="bildlvl3" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="bildlvl3" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/sl_start.png"/>
+                                <Image url="@../../../Image/sl_start.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="bildlvl4" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="bildlvl4" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/aö_start.png"/>
+                                <Image url="@../../../Image/aö_start.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="bildlvl5" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="bildlvl5" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/erui_start.png"/>
+                                <Image url="@../../../Image/erui_start.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="bildlvl6" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="bildlvl6" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/qwop_start.png"/>
+                                <Image url="@../../../Image/qwop_start.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="bildlvl7" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="bildlvl7" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tgzh_start.png"/>
+                                <Image url="@../../../Image/tgzh_start.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="bildlvl8" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="bildlvl8" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/vbn_start.png"/>
+                                <Image url="@../../../Image/vbn_start.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="bildlvl9" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="bildlvl9" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/yxcm_start.png"/>
+                                <Image url="@../../../Image/yxcm_start.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="bildlvl10" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="bildlvl10" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/zahlen_start.png"/>
+                                <Image url="@../../../Image/zahlen_start.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasteabild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteabild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastea.png"/>
+                                <Image url="@../../../Image/tastea.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastebbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastebbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasteb.png"/>
+                                <Image url="@../../../Image/tasteb.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastecbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastecbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastec.png"/>
+                                <Image url="@../../../Image/tastec.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastedbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastedbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasted.png"/>
+                                <Image url="@../../../Image/tasted.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasteebild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteebild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastee.png"/>
+                                <Image url="@../../../Image/tastee.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastefbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastefbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastef.png"/>
+                                <Image url="@../../../Image/tastef.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastegbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastegbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasteg.png"/>
+                                <Image url="@../../../Image/tasteg.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastehbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastehbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasteh.png"/>
+                                <Image url="@../../../Image/tasteh.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasteibild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteibild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastei.png"/>
+                                <Image url="@../../../Image/tastei.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastejbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastejbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastej.png"/>
+                                <Image url="@../../../Image/tastej.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastekbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastekbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastek.png"/>
+                                <Image url="@../../../Image/tastek.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastelbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastelbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastel.png"/>
+                                <Image url="@../../../Image/tastel.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastembild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastembild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastem.png"/>
+                                <Image url="@../../../Image/tastem.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastenbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastenbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasten.png"/>
+                                <Image url="@../../../Image/tasten.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasteobild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteobild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasteo.png"/>
+                                <Image url="@../../../Image/tasteo.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastepbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastepbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastep.png"/>
+                                <Image url="@../../../Image/tastep.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasteqbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteqbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasteq.png"/>
+                                <Image url="@../../../Image/tasteq.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasterbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasterbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/taster.png"/>
+                                <Image url="@../../../Image/taster.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastesbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastesbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastes.png"/>
+                                <Image url="@../../../Image/tastes.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastetbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastetbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastet.png"/>
+                                <Image url="@../../../Image/tastet.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasteubild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteubild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasteu.png"/>
+                                <Image url="@../../../Image/tasteu.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastevbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastevbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastev.png"/>
+                                <Image url="@../../../Image/tastev.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastewbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastewbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastew.png"/>
+                                <Image url="@../../../Image/tastew.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastexbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastexbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastex.png"/>
+                                <Image url="@../../../Image/tastex.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasteybild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteybild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastey.png"/>
+                                <Image url="@../../../Image/tastey.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastezbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastezbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastez.png"/>
+                                <Image url="@../../../Image/tastez.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasteöbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0"
-                                   pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteöbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasteö.png"/>
+                                <Image url="@../../../Image/tasteö.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
 
-                        <ImageView fx:id="tasteeinsbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteeinsbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasteeins.png"/>
+                                <Image url="@../../../Image/tasteeins.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastezweibild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastezweibild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastezwei.png"/>
+                                <Image url="@../../../Image/tastezwei.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastedreibild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastedreibild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastedrei.png"/>
+                                <Image url="@../../../Image/tastedrei.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastevierbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastevierbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastevier.png"/>
+                                <Image url="@../../../Image/tastevier.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastefünfbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastefünfbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastefünf.png"/>
+                                <Image url="@../../../Image/tastefünf.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastesechsbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastesechsbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastesechs.png"/>
+                                <Image url="@../../../Image/tastesechs.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastesiebenbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastesiebenbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastesieben.png"/>
+                                <Image url="@../../../Image/tastesieben.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasteachtbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteachtbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasteacht.png"/>
+                                <Image url="@../../../Image/tasteacht.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasteneunbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteneunbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasteneun.png"/>
+                                <Image url="@../../../Image/tasteneun.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastenullbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastenullbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastenull.png"/>
+                                <Image url="@../../../Image/tastenull.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tasteleerschlagbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tasteleerschlagbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tasteleerschlag.png"/>
+                                <Image url="@../../../Image/tasteleerschlag.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastepunktbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastepunktbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastepunkt.png"/>
+                                <Image url="@../../../Image/tastepunkt.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastekommabild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastekommabild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastekomma.png"/>
+                                <Image url="@../../../Image/tastekomma.png" />
                             </image>
                         </ImageView>
                     </children>
                     <children>
-                        <ImageView fx:id="tastebindestrichbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0"
-                                   layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                        <ImageView fx:id="tastebindestrichbild" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>
-                                <Image url="@../../../Image/tastebindestrich.png"/>
+                                <Image url="@../../../Image/tastebindestrich.png" />
                             </image>
                         </ImageView>
+                      <Button fx:id="abbruch" focusTraversable="false" layoutX="1053.0" layoutY="97.0" mnemonicParsing="false" onAction="#abbruchbutton" style="-fx-background-color: #f4cccc;" styleClass="Buttonbrilliance.css" stylesheets="@Buttonbrillance.css" text="Abbruch">
+                          <font>
+                              <Font size="24.0" />
+                          </font>
+                          <effect>
+                              <Glow />
+                          </effect>
+                      </Button>
                     </children>
                 </AnchorPane>
             </children>
