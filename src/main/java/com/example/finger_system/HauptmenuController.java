@@ -34,6 +34,4 @@ public class HauptmenuController extends Parent {
     public void exitStart(ActionEvent event) throws IOException {
         System.exit(0);
     }
-
-
 }

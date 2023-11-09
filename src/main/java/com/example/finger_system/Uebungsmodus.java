@@ -30,11 +30,9 @@ public class Uebungsmodus {
     public String getCharsTyped() {
         return charsTyped;
     }
-
     public String getCharsLeft() {
         return charsLeft;
     }
-
     public boolean isActive() {
         return active;
     }

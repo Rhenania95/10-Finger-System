@@ -68,7 +68,6 @@ public class Programmstart extends Application {
                         uebungsmodusController.start(stage);
                     }else {
                             timerauswahlController.uebungsmodus.keyPressed((event.getText().charAt(0)));
-                            System.out.println(event.getSource());
                             if (timerauswahlController.uebungsmodus.keyPressedCheck()) {
                                 timerauswahlController.uebungsmodus.next();
                                 uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), true);

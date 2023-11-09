@@ -1,17 +1,13 @@
 package com.example.finger_system.Module;
-
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 public class Uebung extends Modul {
-
     /* Jede Übung besitzt ein Level, dass unterscheidet, welche Tasten in der Übung verwendet werden.
      *  Rückgabe mittels getLevel().
      *  Seten mittels setLevel().
      */
     private int Level;
-
-
     /* Je nach Tastatur unterschiedet sich die Verteilung der Buchstaben auf der Tastatut.
      *  Das Attrbut dient zur Unterscheidung der verschiedenen Tastaturen.
      *  Unterschiedliche Tastaturen haben jeweils anders aufgebaute Levels.
@@ -23,7 +19,6 @@ public class Uebung extends Modul {
      *
      */
     private String Tastatur;
-
     /* Der String enthält die Tasten für die Übung.
      *  Wird im Konstruktor mit der Methode Buchstabenset() anhand der Attribute Level, Stufe und Tastatur erstellt.
      *  Rückgabe mittels getTasten().
@@ -31,7 +26,6 @@ public class Uebung extends Modul {
      *  Ausgabe mittels prtTasten().
      */
     private String Tasten = null;
-
     /* Es werden 2 Stufen unterschieden:
      * Stufe 1: Der Benutzer lernt neue Buchstaben kennen. Deshalb besteht die Übung lediglich aus den neu dazugelernten Buchstaben.
      * Stufe 2: Der Benutzer übt die bereits gelernten Buchstaben. Die Übung besteht aus allen bisher gelernten Buchstaben.
@@ -39,13 +33,11 @@ public class Uebung extends Modul {
      * Setzen mittels setStufe().
      */
     private int Stufe;
-
     /* Die Aufgabe wird auf dem Bildschirm dargestellt und soll abgetippt werden.
      *  Rückgabe mittels getAufgabe().
      *  Setzen mittels setAufgabe().
      */
     private String aufgabe = "";
-
     /*
      * Konstruktor für die Klasse Uebung.
      * Parameter: Level, Stufe, Tastatur
@@ -57,8 +49,6 @@ public class Uebung extends Modul {
         setTasten();
         setAufgabe();
     }
-
-
     /*
      * Die Methode öffnet eine Text-Datei in Abhängigkeit der gewählten Tastatur.
      * Aus der Datei wird ein Set von Tasten entspechend dem Level ausgelesen.
@@ -108,57 +98,45 @@ public class Uebung extends Modul {
         }
 
     }
-
     //Die Methode gibt das Level der Übung zurück.
     public int getLevel() {
         return Level;
     }
-
-
     //Die Methode setzt das Level der Übung.
     public void setLevel(int Level) {
         this.Level = Level;
     }
-
     //Die Methode gibt die Stufe der Übung zurück.
     public int getStufe() {
         return Stufe;
     }
-
     //Die Methode setzt die Stufe der Übung.
     public void setStufe(int Stufe) {
         this.Stufe = Stufe;
     }
-
     //Die Methode gibt die Tastatur der Übung zurück.
     @Override
     public String getTastatur() {
         return Tastatur;
     }
-
     //Die Methode setzt die Tastatur der Übung.
     public void setTastatur(String Tastatur) {
         this.Tastatur = Tastatur;
     }
-
-
     //Die Methode gibt das Set von Tasten zurück, aus dem die Übung zusammengestellt wird.
     public String getTasten() {
         return Tasten;
     }
-
     /*
      *   Die Methode gibt ein Set von Tasten zurück, aus dem die Übung zusammengestellt wird.
      */
     public void setTasten() {
         Buchstabenset();
     }
-
     //Die Methode gibt die Tasten der Übung über die Konsole aus.
     public void prtTasten() {
         System.out.println(Tasten);
     }
-
     //Die Methode erstellt eine Aufgabe durch zufälliges Verwenden der Set-Methoden.
     private void setAufgabe() {
         while(aufgabe.length() < 30)    {
@@ -186,12 +164,10 @@ public class Uebung extends Modul {
         }
 
     }
-
     //Die Methode gibt die Aufgabe der Übung zurück.
     public String getAufgabe() {
         return aufgabe;
     }
-
     //Die Methode fügt der Aufgabe dreimal einen einzelnen Buchstaben zu.
     private void einerSet()   {
         int j = (int) (Math.random() * Tasten.length());
@@ -199,7 +175,6 @@ public class Uebung extends Modul {
             aufgabe += Tasten.charAt(j);
         }
     }
-
     //Die Methode fügt der Aufgabe dreimal ein Zweierset des Buchstabens zu.
     private void doppelSet() {
         int j = (int) (Math.random() * Tasten.length());
@@ -215,7 +190,6 @@ public class Uebung extends Modul {
             aufgabe += Tasten.charAt(j) + Tasten.charAt(j) + Tasten.charAt(j);
         }
     }
-
     //Die Methode fügt der Aufgabe 10 zufällige Buchstaben aus den Tasten zu.
     private void zufallsSet()   {
         int j;
@@ -224,5 +198,4 @@ public class Uebung extends Modul {
             aufgabe += Tasten.charAt(j);
         }
     }
-
 }

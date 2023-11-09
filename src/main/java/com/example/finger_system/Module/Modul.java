@@ -25,9 +25,5 @@ public abstract class Modul {
     public abstract String getTastatur();
 
     public abstract void setTastatur(String Tastatur);
-
-    public abstract String getTasten();
-
     public abstract void setTasten();
-
 }

@@ -13,7 +13,6 @@ public class TimerauswahlController{
     private Scene sceneUebungsmodus;
     private Scene sceneAuswahluebungen;
     protected Uebungsmodus uebungsmodus;
-
     public void setStage(Stage stage) {
         this.stage = stage;
     }
@@ -43,5 +42,4 @@ public class TimerauswahlController{
     public void timereingabeabbrechen(ActionEvent event) throws IOException {
         stage.setScene(sceneAuswahluebungen);
     }
-
 }

@@ -38,7 +38,6 @@ public class UebungsmodusController extends Programmstart {
     int level = AuswahluebungenController.uebergabe[0];
     int stufe = AuswahluebungenController.uebergabe[1];
     private Timeline timeline = new Timeline();
-
     public void setStage(Stage stage) {
         this.stage = stage;
         uebungNummer.setText(String.valueOf(level));
