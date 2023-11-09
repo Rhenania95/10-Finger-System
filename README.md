@@ -108,8 +108,14 @@ Alternativ kann das Programm auch von einer IDE ausgeführt werden: navigieren h
 ## 6.2) Anreicherung der User Stories für die Umsetzung <a name="subparagraph5"></a>
 
 ## 6.3) UML Package, Klassen- und Sequenzdiagramm <a name="subparagraph6"></a>
-### Packagediagramm 
+#  Packagediagramm 
 Mit dem Packagediagramm wird die Package Struktur dargestellt.
+
+#  Klasseniagramm 
+Mit dem Packagediagramm wird die Package Struktur dargestellt.
+
+#  Sequenzdiagramm 
+Das Sequenzdiagramm stellt den Ablauf des Programms dar. Erstellte Objekte sowie deren Lebensdauer werden verdeutlicht.
 
 ## 6.4) Dokumentation wichtiger Code Snippets <a name="subparagraph7"></a>
 
