@@ -9,10 +9,15 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class ResultatfensterController {
+    @FXML
     private Label Zeichenausgabe;
+    @FXML
     private Label Zeichenprominute;
+    @FXML
     private Label Fehlerausgabe;
+    @FXML
     private Label Fehlerquote;
+    @FXML
     private Label Übungsdauer;
     private Stage stage;
     private Scene sceneHauptmenu;
