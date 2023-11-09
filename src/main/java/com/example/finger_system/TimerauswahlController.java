@@ -42,6 +42,7 @@ public class TimerauswahlController extends Programmstart {
         uebungsmodus = new Uebungsmodus(level, stufe, "QWERTZ");
         stage.setScene(sceneUebungsmodus);
         uebungsmodusController.setLevelStufeText();
+        uebungsmodusController.startbild();
     }
     @FXML
     public void timereingabeprüfen(ActionEvent event) throws IOException{

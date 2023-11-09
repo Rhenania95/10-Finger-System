@@ -15,6 +15,7 @@ import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+
 import java.io.IOException;
 
 public class UebungsmodusController extends Programmstart {
@@ -145,40 +146,35 @@ public class UebungsmodusController extends Programmstart {
     private String zeit;
     public void setStage(Stage stage) {
         this.stage = stage;
-        startbild();
     }
     public void setLevelStufeText() {
         uebungNummer.setText(String.valueOf(level));
         if (stufe == 1) {
             Stufe.setText("lernen");
         }
-        if (stufe == 2){
+        if (stufe == 2) {
             Stufe.setText("trainieren");
         }
     }
     public void setSceneResultatfenster(Scene sceneResultatfenster) {
         this.sceneResultatfenster = sceneResultatfenster;
     }
-
     public void setLevel(int level) {
         this.level = level;
     }
-
     public void setStufe(int stufe) {
         this.stufe = stufe;
     }
-
     @FXML
     public void setTextausgabe(String charsTyped, String currentCharRequired, String charsLeft, boolean correct) {
-        aktuellerbuchstabe = currentCharRequired.charAt(0);
         TextFlow textFlowPane = new TextFlow();
         Text charsTypedText = new Text(charsTyped);
         charsTypedText.setFill(Color.GREEN);
         charsTypedText.setFont(Font.font(fontSize));
         Text currentCharRequiredText = new Text(currentCharRequired);
-        if(correct){
+        if (correct) {
             currentCharRequiredText.setFill(Color.BLUE);
-        }else {
+        } else {
             currentCharRequiredText.setFill(Color.RED);
         }
         currentCharRequiredText.setFont(Font.font(fontSize));
@@ -190,13 +186,12 @@ public class UebungsmodusController extends Programmstart {
         textAusgabe.setGraphic(textFlowPane);
     }
     private void easteregg(Label label, int n) {
-        if(n==69){
+        if (n == 69) {
             label.setText("nice");
         }
         if (n == 420) {
             label.setText("snoop dog");
-        }
-        else {
+        } else {
             label.setText(String.valueOf(n));
         }
     }
@@ -206,28 +201,28 @@ public class UebungsmodusController extends Programmstart {
     public void setFehlerAusgabe(int n) {
         easteregg(fehlerAusgabe, n);
     }
-    private String fehlerQuote(){
+    private String fehlerQuote() {
         int keyPressedCount = timerauswahlController.uebungsmodus.getKeyPressCount();
         int wrongKeyPressedCount = timerauswahlController.uebungsmodus.getWrongKeyPressedCount();
-        if((keyPressedCount == 0)||(wrongKeyPressedCount == 0)){
+        if ((keyPressedCount == 0) || (wrongKeyPressedCount == 0)) {
             return "0";
-        }else {
-            int fehlerquote = (wrongKeyPressedCount*100)/keyPressedCount;
+        } else {
+            int fehlerquote = (wrongKeyPressedCount * 100) / keyPressedCount;
             return String.valueOf(fehlerquote);
         }
     }
-    private String zeichenQuote(){
+    private String zeichenQuote() {
         int keyPressedCount = timerauswahlController.uebungsmodus.getKeyPressCount();
-        long time = (zeitminuten*60+zeitzener+zeiteiner)/60;
+        long time = (zeitminuten * 60 + zeitzener + zeiteiner) / 60;
 
-        if (time == 0){
+        if (time == 0) {
             return "0";
-        }else {
-            long zeichenquote = (keyPressedCount)/time;
+        } else {
+            long zeichenquote = (keyPressedCount) / time;
             return String.valueOf(zeichenquote);
         }
     }
-    private void reset(){
+    private void reset() {
         resultatfensterController.setZeichenausgabeText(String.valueOf(timerauswahlController.uebungsmodus.getKeyPressCount()));
         resultatfensterController.setFehlerausgabeText(String.valueOf(timerauswahlController.uebungsmodus.getWrongKeyPressedCount()));
         resultatfensterController.setÜbungsdauerText(zeit);
@@ -276,15 +271,15 @@ public class UebungsmodusController extends Programmstart {
             @Override
             public void handle(ActionEvent event) {
                 zeiteiner++;
-                if (zeiteiner == 10){
+                if (zeiteiner == 10) {
                     zeiteiner = 0;
                     zeitzener++;
                 }
-                if (zeitzener == 6){
+                if (zeitzener == 6) {
                     zeitzener = 0;
                     zeitminuten++;
                 }
-                if (zeitminuten == timerauswahlController.getDauer()){
+                if (zeitminuten == timerauswahlController.getDauer()) {
                     reset();
                 }
                 zeit = String.valueOf(zeitminuten) + ":" + String.valueOf(zeitzener) + String.valueOf(zeiteiner);
@@ -301,39 +296,42 @@ public class UebungsmodusController extends Programmstart {
         timeline.play();
     }
     public void startbild() {
-        if (level == 1) {
-            bildlvl1.setVisible(true);
+        bilderbeenden();
+        switch (level) {
+            case 1:
+                bildlvl1.setVisible(true);
+                break;
+            case 2:
+                bildlvl2.setVisible(true);
+                break;
+            case 3:
+                bildlvl3.setVisible(true);
+                break;
+            case 4:
+                bildlvl4.setVisible(true);
+                break;
+            case 5:
+                bildlvl5.setVisible(true);
+                break;
+            case 6:
+                bildlvl6.setVisible(true);
+                break;
+            case 7:
+                bildlvl7.setVisible(true);
+                break;
+            case 8:
+                bildlvl8.setVisible(true);
+                break;
+            case 9:
+                bildlvl9.setVisible(true);
+                break;
+            case 10:
+                bildlvl10.setVisible(true);
+                break;
         }
-        if (level == 2) {
-            bildlvl2.setVisible(true);
-        }
-        if (level == 3) {
-            bildlvl3.setVisible(true);
-        }
-        if (level == 4) {
-            bildlvl4.setVisible(true);
-        }
-        if (level == 5) {
-            bildlvl5.setVisible(true);
-        }
-        if (level == 6) {
-            bildlvl6.setVisible(true);
-        }
-        if (level == 7) {
-            bildlvl7.setVisible(true);
-        }
-        if (level == 8) {
-            bildlvl8.setVisible(true);
-        }
-        if (level == 9) {
-            bildlvl9.setVisible(true);
-        }
-        if (level == 10) {
-            bildlvl10.setVisible(true);
-        }
-    /*}
-    public void uebungsbild() {
-     */
+    }
+    public void uebungsbild(char aktuellerbuchstabe) {
+        bilderbeenden();
         if (aktuellerbuchstabe == '1') {
             tasteeinsbild.setVisible(true);
         }
@@ -457,5 +455,58 @@ public class UebungsmodusController extends Programmstart {
         if (aktuellerbuchstabe == ' ') {
             tasteleerschlagbild.setVisible(true);
         }
+    }
+    public void bilderbeenden(){
+        bildlvl1.setVisible(false);
+        bildlvl2.setVisible(false);
+        bildlvl3.setVisible(false);
+        bildlvl4.setVisible(false);
+        bildlvl5.setVisible(false);
+        bildlvl6.setVisible(false);
+        bildlvl7.setVisible(false);
+        bildlvl8.setVisible(false);
+        bildlvl9.setVisible(false);
+        bildlvl10.setVisible(false);
+        tasteeinsbild.setVisible(false);
+        tastezweibild.setVisible(false);
+        tastedreibild.setVisible(false);
+        tastevierbild.setVisible(false);
+        tastefünfbild.setVisible(false);
+        tastesechsbild.setVisible(false);
+        tastesiebenbild.setVisible(false);
+        tasteachtbild.setVisible(false);
+        tasteneunbild.setVisible(false);
+        tastenullbild.setVisible(false);
+        tasteqbild.setVisible(false);
+        tastewbild.setVisible(false);
+        tasteebild.setVisible(false);
+        tasterbild.setVisible(false);
+        tastetbild.setVisible(false);
+        tastezbild.setVisible(false);
+        tasteubild.setVisible(false);
+        tasteibild.setVisible(false);
+        tasteobild.setVisible(false);
+        tastepbild.setVisible(false);
+        tasteabild.setVisible(false);
+        tastesbild.setVisible(false);
+        tastedbild.setVisible(false);
+        tastefbild.setVisible(false);
+        tastegbild.setVisible(false);
+        tastehbild.setVisible(false);
+        tastejbild.setVisible(false);
+        tastekbild.setVisible(false);
+        tastelbild.setVisible(false);
+        tasteöbild.setVisible(false);
+        tasteybild.setVisible(false);
+        tastexbild.setVisible(false);
+        tastecbild.setVisible(false);
+        tastevbild.setVisible(false);
+        tastebbild.setVisible(false);
+        tastenbild.setVisible(false);
+        tastembild.setVisible(false);
+        tastekommabild.setVisible(false);
+        tastepunktbild.setVisible(false);
+        tastebindestrichbild.setVisible(false);
+        tasteleerschlagbild.setVisible(false);
     }
 }

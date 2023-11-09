@@ -15,6 +15,7 @@ public class Programmstart extends Application {
     protected static UebungsmodusController uebungsmodusController;
     protected static ResultatfensterController resultatfensterController;
     protected Uebungsmodus uebungsmodus;
+
     @Override
     public void start(Stage stage) {
         try {
@@ -65,29 +66,32 @@ public class Programmstart extends Application {
                 public void handle(KeyEvent event) {
                     if (!timerauswahlController.uebungsmodus.isActive()) {
                         timerauswahlController.uebungsmodus.start();
-                        uebungsmodusController.setTextausgabe(" "," ",timerauswahlController.uebungsmodus.getAufgabe(),true);
+                        uebungsmodusController.setTextausgabe("", "", timerauswahlController.uebungsmodus.getAufgabe(), true);
                         uebungsmodusController.start(stage);
-                    }else {
-                            timerauswahlController.uebungsmodus.keyPressed((event.getText().charAt(0)));
-                            if (timerauswahlController.uebungsmodus.keyPressedCheck()) {
-                                timerauswahlController.uebungsmodus.next();
-                                uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), true);
-                            } else {
-                                uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), false);
-                            }
-                            uebungsmodusController.setAnschlägeAusgabe(timerauswahlController.uebungsmodus.getKeyPressCount());
-                            uebungsmodusController.setFehlerAusgabe(timerauswahlController.uebungsmodus.getWrongKeyPressedCount());
+                        uebungsmodusController.uebungsbild(timerauswahlController.uebungsmodus.getCurrentCharRequired());
+                    } else {
+                        timerauswahlController.uebungsmodus.keyPressed((event.getText().charAt(0)));
+                        if (timerauswahlController.uebungsmodus.keyPressedCheck()) {
+                            timerauswahlController.uebungsmodus.next();
+                            uebungsmodusController.uebungsbild(timerauswahlController.uebungsmodus.getCurrentCharRequired());
+                            uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), true);
+                        } else {
+                            uebungsmodusController.setTextausgabe(timerauswahlController.uebungsmodus.getCharsTyped(), "" + timerauswahlController.uebungsmodus.getCurrentCharRequired(), timerauswahlController.uebungsmodus.getCharsLeft(), false);
                         }
+                        uebungsmodusController.setAnschlägeAusgabe(timerauswahlController.uebungsmodus.getKeyPressCount());
+                        uebungsmodusController.setFehlerAusgabe(timerauswahlController.uebungsmodus.getWrongKeyPressedCount());
                     }
+                }
             });
             stage.setScene(sceneHauptmenu);
             stage.setTitle("Tipp dich fitt");
             stage.show();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     public static void main(String[] args) {
         launch();
     }
