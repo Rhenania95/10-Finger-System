@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -23,6 +24,7 @@ public class UebungsmodusController extends Programmstart {
     private Label fehlerAusgabe;
     private Stage stage;
     private Scene sceneResultatfenster;
+    private int aktuellerbuchstabe;
     @FXML
     private Label textAusgabe;
     @FXML
@@ -31,6 +33,108 @@ public class UebungsmodusController extends Programmstart {
     private Label Stufe;
     @FXML
     private Label zeitausgabe;
+    @FXML
+    private ImageView bildlvl1;
+    @FXML
+    private ImageView bildlvl2;
+    @FXML
+    private ImageView bildlvl3;
+    @FXML
+    private ImageView bildlvl4;
+    @FXML
+    private ImageView bildlvl5;
+    @FXML
+    private ImageView bildlvl6;
+    @FXML
+    private ImageView bildlvl7;
+    @FXML
+    private ImageView bildlvl8;
+    @FXML
+    private ImageView bildlvl9;
+    @FXML
+    private ImageView bildlvl10;
+    @FXML
+    private ImageView tasteeinsbild;
+    @FXML
+    private ImageView tastezweibild;
+    @FXML
+    private ImageView tastedreibild;
+    @FXML
+    private ImageView tastevierbild;
+    @FXML
+    private ImageView tastefünfbild;
+    @FXML
+    private ImageView tastesechsbild;
+    @FXML
+    private ImageView tastesiebenbild;
+    @FXML
+    private ImageView tasteachtbild;
+    @FXML
+    private ImageView tasteneunbild;
+    @FXML
+    private ImageView tastenullbild;
+    @FXML
+    private ImageView tasteqbild;
+    @FXML
+    private ImageView tastewbild;
+    @FXML
+    private ImageView tasteebild;
+    @FXML
+    private ImageView tasterbild;
+    @FXML
+    private ImageView tastetbild;
+    @FXML
+    private ImageView tastezbild;
+    @FXML
+    private ImageView tasteubild;
+    @FXML
+    private ImageView tasteibild;
+    @FXML
+    private ImageView tasteobild;
+    @FXML
+    private ImageView tastepbild;
+    @FXML
+    private ImageView tasteabild;
+    @FXML
+    private ImageView tastesbild;
+    @FXML
+    private ImageView tastedbild;
+    @FXML
+    private ImageView tastefbild;
+    @FXML
+    private ImageView tastegbild;
+    @FXML
+    private ImageView tastehbild;
+    @FXML
+    private ImageView tastejbild;
+    @FXML
+    private ImageView tastekbild;
+    @FXML
+    private ImageView tastelbild;
+    @FXML
+    private ImageView tasteöbild;
+    @FXML
+    private ImageView tasteybild;
+    @FXML
+    private ImageView tastexbild;
+    @FXML
+    private ImageView tastecbild;
+    @FXML
+    private ImageView tastevbild;
+    @FXML
+    private ImageView tastebbild;
+    @FXML
+    private ImageView tastenbild;
+    @FXML
+    private ImageView tastembild;
+    @FXML
+    private ImageView tastekommabild;
+    @FXML
+    private ImageView tastepunktbild;
+    @FXML
+    private ImageView tastebindestrichbild;
+    @FXML
+    private ImageView tasteleerschlagbild;
     int zeiteiner = 0; //1s
     int zeitzener = 0; //10s
     int zeitminuten = 0; //60s = 1 min
@@ -41,6 +145,7 @@ public class UebungsmodusController extends Programmstart {
     private String zeit;
     public void setStage(Stage stage) {
         this.stage = stage;
+        startbild();
         uebungNummer.setText(String.valueOf(level));
         if (stufe == 1) {
             Stufe.setText("lernen");
@@ -48,13 +153,13 @@ public class UebungsmodusController extends Programmstart {
         if (stufe == 2){
             Stufe.setText("trainieren");
         }
-
     }
     public void setSceneResultatfenster(Scene sceneResultatfenster) {
         this.sceneResultatfenster = sceneResultatfenster;
     }
     @FXML
     public void setTextausgabe(String charsTyped, String currentCharRequired, String charsLeft, boolean correct) {
+        aktuellerbuchstabe = currentCharRequired.charAt(0);
         TextFlow textFlowPane = new TextFlow();
         Text charsTypedText = new Text(charsTyped);
         charsTypedText.setFill(Color.GREEN);
@@ -183,5 +288,163 @@ public class UebungsmodusController extends Programmstart {
 
         // Starte die Timeline
         timeline.play();
+    }
+    public void startbild() {
+        if (level == 1) {
+            bildlvl1.setVisible(true);
+        }
+        if (level == 2) {
+            bildlvl2.setVisible(true);
+        }
+        if (level == 3) {
+            bildlvl3.setVisible(true);
+        }
+        if (level == 4) {
+            bildlvl4.setVisible(true);
+        }
+        if (level == 5) {
+            bildlvl5.setVisible(true);
+        }
+        if (level == 6) {
+            bildlvl6.setVisible(true);
+        }
+        if (level == 7) {
+            bildlvl7.setVisible(true);
+        }
+        if (level == 8) {
+            bildlvl8.setVisible(true);
+        }
+        if (level == 9) {
+            bildlvl9.setVisible(true);
+        }
+        if (level == 10) {
+            bildlvl10.setVisible(true);
+        }
+    /*}
+    public void uebungsbild() {
+     */
+        if (aktuellerbuchstabe == '1') {
+            tasteeinsbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == '2') {
+            tastezweibild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == '3') {
+            tastedreibild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == '4') {
+            tastevierbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == '5') {
+            tastefünfbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == '6') {
+            tastesechsbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == '7') {
+            tastesiebenbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == '8') {
+            tasteachtbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == '9') {
+            tasteneunbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == '0') {
+            tastenullbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'a') {
+            tasteabild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'b') {
+            tastebbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'c') {
+            tastecbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'd') {
+            tastedbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'e') {
+            tasteebild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'f') {
+            tastefbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'g') {
+            tastegbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'h') {
+            tastehbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'i') {
+            tasteibild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'j') {
+            tastejbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'k') {
+            tastekbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'l') {
+            tastelbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'm') {
+            tastembild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'n') {
+            tastenbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'o') {
+            tasteobild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'p') {
+            tastepbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'q') {
+            tasteqbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'r') {
+            tasterbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 's') {
+            tastesbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 't') {
+            tastetbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'u') {
+            tasteubild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'v') {
+            tastevbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'w') {
+            tastewbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'x') {
+            tastexbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'y') {
+            tasteybild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'z') {
+            tastezbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == 'ö') {
+            tasteöbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == ',') {
+            tastekommabild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == '.') {
+            tastepunktbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == '-') {
+            tastebindestrichbild.setVisible(true);
+        }
+        if (aktuellerbuchstabe == ' ') {
+            tasteleerschlagbild.setVisible(true);
+        }
     }
 }
