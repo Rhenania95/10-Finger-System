@@ -169,6 +169,7 @@ Package com.example.10-Finger-System und führen Sie die Klasse Programmstart au
 # Packagediagramm
 
 Mit dem Packagediagramm wird die Package Struktur dargestellt.
+![Untitled 3](https://github.com/Rhenania95/10-Finger-System/assets/147594404/4592b41f-3581-4ccc-8217-2a11f9e085f8)
 
 # Klasseniagramm
 
