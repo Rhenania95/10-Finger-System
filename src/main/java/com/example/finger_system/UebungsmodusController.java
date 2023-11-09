@@ -31,13 +31,14 @@ public class UebungsmodusController extends Programmstart {
     private Label Stufe;
     @FXML
     private Label zeitausgabe;
-    int zeiteiner = 0;
-    int zeitzener = 0;
-    int zeitminuten = 0;
+    int zeiteiner = 0; //1s
+    int zeitzener = 0; //10s
+    int zeitminuten = 0; //60s = 1 min
     private int fontSize = 50;
     int level = AuswahluebungenController.uebergabe[0];
     int stufe = AuswahluebungenController.uebergabe[1];
     private Timeline timeline = new Timeline();
+    private String zeit;
     public void setStage(Stage stage) {
         this.stage = stage;
         uebungNummer.setText(String.valueOf(level));
@@ -89,14 +90,40 @@ public class UebungsmodusController extends Programmstart {
     public void setFehlerAusgabe(int n) {
         easteregg(fehlerAusgabe, n);
     }
+    private String fehlerQuote(){
+        int keyPressedCount = timerauswahlController.uebungsmodus.getKeyPressCount();
+        int wrongKeyPressedCount = timerauswahlController.uebungsmodus.getWrongKeyPressedCount();
+        if((keyPressedCount == 0)||(wrongKeyPressedCount == 0)){
+            return "0%";
+        }else {
+            int fehlerquote = (wrongKeyPressedCount*100)/keyPressedCount;
+            return String.valueOf(fehlerquote);
+        }
+    }
+    private String zeichenQuote(){
+        int keyPressedCount = timerauswahlController.uebungsmodus.getKeyPressCount();
+        long time = (zeitminuten*60+zeitzener+zeiteiner)/60;
+
+        if (time == 0){
+            return "0";
+        }else {
+            long zeichenquote = (keyPressedCount)/time;
+            return String.valueOf(zeichenquote);
+        }
+    }
     private void reset(){
+        resultatfensterController.setZeichenausgabeText(String.valueOf(timerauswahlController.uebungsmodus.getKeyPressCount()));
+        resultatfensterController.setFehlerausgabeText(String.valueOf(timerauswahlController.uebungsmodus.getWrongKeyPressedCount()));
+        resultatfensterController.setÜbungsdauerText(zeit);
+        resultatfensterController.setFehlerquoteText(fehlerQuote());
+        resultatfensterController.setZeichenprominuteText(zeichenQuote());
+
         TextFlow textFlowPane = new TextFlow();
         Text restartText = new Text("Tastendruck startet die Übung");
         restartText.setFill(Color.BLACK);
         restartText.setFont(Font.font(fontSize));
         textFlowPane.getChildren().add(restartText);
         textAusgabe.setGraphic(textFlowPane);
-        stage.setScene(sceneResultatfenster);
         fehlerAusgabe.setText("0");
         anschlägeAusgabe.setText("0");
         timeline.stop();
@@ -105,6 +132,8 @@ public class UebungsmodusController extends Programmstart {
         zeitzener = 0;
         zeitminuten = 0;
         zeitausgabe.setText("0:00");
+
+        stage.setScene(sceneResultatfenster);
     }
     @FXML
     public void abbruchbutton(ActionEvent event) throws IOException {
@@ -142,8 +171,8 @@ public class UebungsmodusController extends Programmstart {
                 if (zeitminuten == TimerauswahlController.dauer){
                     reset();
                 }
-                String ausgabe = String.valueOf(zeitminuten) + ":" + String.valueOf(zeitzener) + String.valueOf(zeiteiner);
-                zeitausgabe.setText(ausgabe);
+                zeit = String.valueOf(zeitminuten) + ":" + String.valueOf(zeitzener) + String.valueOf(zeiteiner);
+                zeitausgabe.setText(zeit);
             }
         });
         // Füge den KeyFrame zur Timeline hinzu
@@ -154,5 +183,5 @@ public class UebungsmodusController extends Programmstart {
 
         // Starte die Timeline
         timeline.play();
-}
+    }
 }

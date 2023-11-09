@@ -27,6 +27,21 @@ public class ResultatfensterController {
     public void setSceneHauptmenu(Scene sceneHauptmenu) {
         this.sceneHauptmenu = sceneHauptmenu;
     }
+    public void setZeichenausgabeText(String txt){
+        Zeichenausgabe.setText(txt);
+    }
+    public void setZeichenprominuteText(String txt){
+        Zeichenprominute.setText(txt);
+    }
+    public void setFehlerausgabeText(String txt){
+        Fehlerausgabe.setText(txt);
+    }
+    public void setFehlerquoteText(String txt){
+        Fehlerquote.setText(txt);
+    }
+    public void setÜbungsdauerText(String txt){
+        Übungsdauer.setText(txt);
+    }
     @FXML
     public void StartHauptmenu(ActionEvent event) throws IOException {
         stage.setScene(sceneHauptmenu);

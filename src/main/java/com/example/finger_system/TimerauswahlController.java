@@ -8,11 +8,17 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class TimerauswahlController{
+public class TimerauswahlController extends Programmstart {
     private Stage stage;
     private Scene sceneUebungsmodus;
     private Scene sceneAuswahluebungen;
-    protected Uebungsmodus uebungsmodus;
+    @FXML
+    private Label falscheEingabe;
+    @FXML
+    private TextField textfeld;
+    public static int dauer;
+    public static int level;
+    public static int stufe;
     public void setStage(Stage stage) {
         this.stage = stage;
     }
@@ -24,13 +30,6 @@ public class TimerauswahlController{
         uebungsmodus = new Uebungsmodus(level, stufe, "QWERTZ");
         stage.setScene(sceneUebungsmodus);
     }
-    @FXML
-    private Label falscheEingabe;
-    @FXML
-    private TextField textfeld;
-    public static int dauer;
-    public static int level;
-    public static int stufe;
     public void timereingabeprüfen(ActionEvent event) throws IOException{
         try {
             dauer = Integer.parseInt(textfeld.getText());

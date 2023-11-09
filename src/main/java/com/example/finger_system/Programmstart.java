@@ -11,9 +11,10 @@ import javafx.stage.Stage;
 public class Programmstart extends Application {
     private HauptmenuController hauptmenuController;
     private AuswahluebungenController auswahluebungenController;
-    private TimerauswahlController timerauswahlController;
+    protected static TimerauswahlController timerauswahlController;
     private UebungsmodusController uebungsmodusController;
-    private ResultatfensterController resultatfensterController;
+    protected static ResultatfensterController resultatfensterController;
+    protected Uebungsmodus uebungsmodus;
     @Override
     public void start(Stage stage) {
         try {
