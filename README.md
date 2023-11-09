@@ -190,6 +190,27 @@ Das Sequenzdiagramm stellt den Ablauf des Programms dar. Erstellte Objekte sowie
 # 7) Dokumentation Sprint 2 <a name="paragraph6"></a>
 
 ## 7.1) Taskliste für die Umsetzung der User Story Sprint 1 <a name="subparagraph9"></a>
+### User Story 6 - Hauptmenü (45')
+| Task                                      | Beschreibung                                                | Aufwandschätzung |
+|-------------------------------------------|--------------------------------------------------------------|-------------------|
+| Benutzerschnittstelle für Hauptmenü erstellen | Menü erstellen, damit Benutzer verschiedene Funktionen auswählen kann | 45' |
+
+### User Story 7 - Verschiedene Levels (1h)
+| Task                                      | Beschreibung                                                | Aufwandschätzung |
+|-------------------------------------------|--------------------------------------------------------------|-------------------|
+| Benutzerschnittstelle für Schwierigkeitsgrad erstellen | Dropdown-Menü oder Schieberegler erstellen, damit Benutzer die Schwierigkeit auswählen kann | 1h |
+
+### User Story 8 - Auswertung (1h 30')
+| Task                                      | Beschreibung                                                | Aufwandschätzung |
+|-------------------------------------------|--------------------------------------------------------------|-------------------|
+| Funktion zur Anzeige von Feedback und Fortschritt implementieren | Code schreiben, um dem Benutzer ein Feedback über seine Fehler und seinen Fortschritt zu geben | 1h |
+| Benutzerschnittstelle für Auswertung erstellen | Fenster oder Popup erstellen, um dem Benutzer am Ende der Lektion das Feedback anzuzeigen | 30' |
+
+### User Story 9 - Dauer der Lektion (1h)
+| Task                                      | Beschreibung                                                | Aufwandschätzung |
+|-------------------------------------------|--------------------------------------------------------------|-------------------|
+| Benutzerschnittstelle für Lektionsdauer erstellen | Eingabefeld oder Dropdown-Menü erstellen, damit Benutzer die Lektionsdauer auswählen kann | 1h |
+
 
 ## 7.2) Anreicherung der User Stories für die Umsetzung <a name="subparagraph10"></a>
 
