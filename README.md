@@ -192,6 +192,35 @@ Mit dem Packagediagramm wird die Package Struktur dargestellt.
 # Sequenzdiagramm
 
 Das Sequenzdiagramm stellt den Ablauf des Programms dar. Erstellte Objekte sowie deren Lebensdauer werden verdeutlicht.
+Die Anwendung "Tipp Dich Fitt" verwendet verschiedene Klassen, die in einem sequentiellen Ablauf interagieren. Hier ist eine Übersicht über die wichtigsten Interaktionen zwischen den Klassen:
+
+![diagramm1](https://github.com/Rhenania95/10-Finger-System/assets/147594404/25bce62e-a52c-4f9e-bf06-ec434c4a95ef)
+
+## Klassenbeschreibungen
+
+### TimerauswahlController:
+- Generiert eine Übung, wenn der Benutzer auf "Bestätigen" drückt.
+- Gibt die erstellte Übung an den UebungsmodusController weiter.
+
+### UebungsmodusController:
+- Holt Übungsdaten aus der Uebung-Klasse.
+- Verarbeitet die Benutzereingaben während der Übung.
+- Gibt die benötigten Daten an den ResultatscreenController weiter, nachdem die Übung abgeschlossen ist.
+
+### ResultatscreenController:
+- Zeigt die Ergebnisse der abgeschlossenen Übung an.
+- Ermöglicht dem Benutzer, zum Hauptmenü zurückzukehren.
+
+## Anwendung starten
+
+Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese startet die gesamte Anwendung und steuert den Ablauf zwischen den verschiedenen Controllern und Ansichten.
+
+## Benutzerinteraktion
+
+- Im Hauptmenü kann der Benutzer Übungen auswählen.
+- Im Timerauswahl-Fenster kann der Benutzer die Timer-Einstellungen vornehmen.
+- Im Übungsmodus gibt der Benutzer die entsprechenden Zeichen ein.
+- Nach Abschluss einer Übung werden die Ergebnisse im Resultatscreen angezeigt.
 
 ## 6.3) Dokumentation wichtiger Code Snippets <a name="subparagraph7"></a>
 
