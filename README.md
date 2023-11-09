@@ -10,16 +10,14 @@
 5. [Releaseplan mit den Ausbaustufen](#paragraph4)
 6. [Dokumentation Sprint 1](#paragraph5)
     1. [Taskliste für die Umsetzung der User Story (Schätzung in Stunden)](#subparagraph4)
-    2. [Anreicherung der User Stories für die Umsetzung](#subparagraph5)
-    3. [UML Package, Klassen- und Sequenzdiagramm](#subparagraph6)
-    4. [Dokumentation wichtiger Code Snippets](#subparagraph7)
-    5. [Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories](#subparagraph8)
+    2. [UML Package, Klassen- und Sequenzdiagramm](#subparagraph6)
+    3. [Dokumentation wichtiger Code Snippets](#subparagraph7)
+    4. [Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories](#subparagraph8)
 7. [Dokumentation Sprint 2](#paragraph6)
     1. [Taskliste für die Umsetzung der User Story (Schätzung in Stunden)](#subparagraph9)
-    2. [Anreicherung der User Stories für die Umsetzung](#subparagraph10)
-    3. [UML Package, Klassen- und Sequenzdiagramm](#subparagraph11)
-    4. [Dokumentation wichtiger Code Snippets](#subparagraph12)
-    5. [Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories](#subparagraph13)
+    2. [UML Package, Klassen- und Sequenzdiagramm](#subparagraph11)
+    3. [Dokumentation wichtiger Code Snippets](#subparagraph12)
+    4. [Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories](#subparagraph13)
 
 ---
 
@@ -165,9 +163,8 @@ Package com.example.10-Finger-System und führen Sie die Klasse Programmstart au
 | Methode zur Erzeugung zufälliger Buchstabenreihen implementieren | Funktion schreiben, um zufällige Buchstabenreihen aus einer vorgegebenen Auswahl zu generieren | 1h |
 
 
-## 6.2) Anreicherung der User Stories für die Umsetzung <a name="subparagraph5"></a>
 
-## 6.3) UML Package, Klassen- und Sequenzdiagramm <a name="subparagraph6"></a>
+## 6.2) UML Package, Klassen- und Sequenzdiagramm <a name="subparagraph6"></a>
 
 # Packagediagramm
 
@@ -181,9 +178,9 @@ Mit dem Packagediagramm wird die Package Struktur dargestellt.
 
 Das Sequenzdiagramm stellt den Ablauf des Programms dar. Erstellte Objekte sowie deren Lebensdauer werden verdeutlicht.
 
-## 6.4) Dokumentation wichtiger Code Snippets <a name="subparagraph7"></a>
+## 6.3) Dokumentation wichtiger Code Snippets <a name="subparagraph7"></a>
 
-## 6.5) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph8"></a>
+## 6.4) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph8"></a>
 
 ---
 
@@ -212,11 +209,9 @@ Das Sequenzdiagramm stellt den Ablauf des Programms dar. Erstellte Objekte sowie
 | Benutzerschnittstelle für Lektionsdauer erstellen | Eingabefeld oder Dropdown-Menü erstellen, damit Benutzer die Lektionsdauer auswählen kann | 1h |
 
 
-## 7.2) Anreicherung der User Stories für die Umsetzung <a name="subparagraph10"></a>
+## 7.2) UML Package, Klassen- und Sequenzdiagramm <a name="subparagraph11"></a>
 
-## 7.3) UML Package, Klassen- und Sequenzdiagramm <a name="subparagraph11"></a>
+## 7.3) Dokumentation wichtiger Code Snippets <a name="subparagraph12"></a>
 
-## 7.4) Dokumentation wichtiger Code Snippets <a name="subparagraph12"></a>
-
-## 7.5) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph13"></a>
+## 7.4) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph13"></a>
 
