@@ -83,7 +83,7 @@
                         <Font size="48.0" />
                     </font>
                 </Text>
-                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <AnchorPane minWidth="798" maxWidth="798" minHeight="269" maxHeight="269" GridPane.columnIndex="1" GridPane.rowIndex="2">
                     <children>
                         <ImageView fx:id="bildlvl1" fitHeight="269.0" fitWidth="798.0" layoutX="224.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" visible="false">
                             <image>

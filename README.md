@@ -86,6 +86,14 @@ Package com.example.10-Finger-System und führen Sie die Klasse Programmstart au
 ---
 
 # 3.) Kurze Bedienungsanleitung <a name="paragraph2"></a>
+## Startseite
+Auf der Startseite kann man zwischen den verschiedenen Bereichen navigieren. Man kann zum einen den Übungs- Test oder Spielmodus aufrufen, wo man seine Fertigkeiten verbessern kann. Ausserdem kann man in den Statistikbereich navigieren. Im Einstellungsbereich kann man grundsätzliche Einstellungen am Programm vornehmen. Zum Beispiel die Sprache oder die Tastatur ändern. Im Abschnitt Credits werden die Ersteller des Projekts erwähnt. Und mit beenden kann man die Anwendung beenden.
+
+## Übungsmodus + Timer einstellen
+In diesem Bildschirm kann man auswählen welche Buchstaben man trainieren möchte. Auf der linken Seite steht, welche Buchstaben in der jeweiligen Übung drannkommen. Wenn man auf lernen drückt, kommen nur die links erwähnten Zeichen dran. Wenn man auf trainieren drückt, kommen sämtliche Zeichen, auch solche aus vorherigen Übungen dran. Wenn man sich für eine Übung und einen Modus entschieden hat, kann man einstellen wie lange die Übung gehen soll. Wenn man erwas anderes als ganze Zahlen eingibt, erscheint eine Fehlermeldung. Ausserdem erhält man im oberen Bildschirm eine Anleitung wie man die Finger zu positionieren hat und welche Farbe welche Bedeutung hat.
+
+## Lektion und Auswertung
+Wenn man die Zeit eingestellt hat, kann man mit der Übung beginnen. Im unteren Bildschirmteil sieht man mit welchen Fingern man die in dieser Übung erlernten Tasten betätigen soll. Mit Knopfdrücken beginnt die Übung. Oben auf der linken Seite wird angezeigt, welche Lektion man bearbeitet und in welchem Modus man sich befindet. Auf der rechten Seite befindet sich der Timer, ein Anschläge- und ein Fehlerzähle. Wenn die Zeit abgelaufen ist wird man automatisch ins Auswertungsmenu geleitet. Wenn man den Abbruchbutton drückt, wird ein Alert ausgegeben ob man die Übung wirklich beenden will. Wenn man das bestätigt, wird man ebenfalls in den Auswertungsscreen geleitet. Dort sieht man zu oberst, wie lange man gelernt hat, darunter sieht man die getippten Zeichen und die daraus berechneten Anschläge pro Minute. Ausserdem werden die Fehler angezeigt und daraus wird die Fehlerquote berechnet.
 
 ---
 

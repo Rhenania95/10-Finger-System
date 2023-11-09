@@ -47,8 +47,14 @@ public class TimerauswahlController extends Programmstart {
     @FXML
     public void timereingabeprüfen(ActionEvent event) throws IOException{
         try {
-            dauer = Integer.parseInt(textfeld.getText());
-            loadUebungsmodus(event);
+            if (Integer.parseInt(textfeld.getText()) > 0) {
+                dauer = Integer.parseInt(textfeld.getText());
+                loadUebungsmodus(event);
+                falscheEingabe.setText(" ");
+            }
+            else {
+                falscheEingabe.setText("!!eingegebene Zahl muss grösser als null sein!!");
+            }
         } catch (NumberFormatException e) {
             falscheEingabe.setText("!!Es können nur ganze Zahlen eingegeben werden!!");
         }

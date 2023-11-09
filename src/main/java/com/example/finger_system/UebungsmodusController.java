@@ -212,14 +212,14 @@ public class UebungsmodusController extends Programmstart {
         }
     }
     private String zeichenQuote() {
-        int keyPressedCount = timerauswahlController.uebungsmodus.getKeyPressCount();
-        long time = (zeitminuten * 60 + zeitzener + zeiteiner) / 60;
-
+        double keyPressedCount = timerauswahlController.uebungsmodus.getKeyPressCount();
+        double time = (zeitminuten * 60 + zeitzener*10 + zeiteiner);
         if (time == 0) {
             return "0";
         } else {
-            long zeichenquote = (keyPressedCount) / time;
-            return String.valueOf(zeichenquote);
+            double zeichenquote = ((keyPressedCount) / time)*60;
+            Math.round(zeichenquote);
+            return String.valueOf((int) zeichenquote);
         }
     }
     private void reset() {
@@ -279,7 +279,7 @@ public class UebungsmodusController extends Programmstart {
                     zeitzener = 0;
                     zeitminuten++;
                 }
-                if (zeitminuten == timerauswahlController.getDauer()) {
+                if (zeitminuten == timerauswahlController.getDauer() && zeiteiner == 0) {
                     reset();
                 }
                 zeit = String.valueOf(zeitminuten) + ":" + String.valueOf(zeitzener) + String.valueOf(zeiteiner);
