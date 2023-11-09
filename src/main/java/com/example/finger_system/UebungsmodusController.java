@@ -139,13 +139,15 @@ public class UebungsmodusController extends Programmstart {
     int zeitzener = 0; //10s
     int zeitminuten = 0; //60s = 1 min
     private int fontSize = 50;
-    int level = AuswahluebungenController.uebergabe[0];
-    int stufe = AuswahluebungenController.uebergabe[1];
+    int level;
+    int stufe;
     private Timeline timeline = new Timeline();
     private String zeit;
     public void setStage(Stage stage) {
         this.stage = stage;
         startbild();
+    }
+    public void setLevelStufeText() {
         uebungNummer.setText(String.valueOf(level));
         if (stufe == 1) {
             Stufe.setText("lernen");
@@ -157,6 +159,15 @@ public class UebungsmodusController extends Programmstart {
     public void setSceneResultatfenster(Scene sceneResultatfenster) {
         this.sceneResultatfenster = sceneResultatfenster;
     }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public void setStufe(int stufe) {
+        this.stufe = stufe;
+    }
+
     @FXML
     public void setTextausgabe(String charsTyped, String currentCharRequired, String charsLeft, boolean correct) {
         aktuellerbuchstabe = currentCharRequired.charAt(0);
@@ -199,7 +210,7 @@ public class UebungsmodusController extends Programmstart {
         int keyPressedCount = timerauswahlController.uebungsmodus.getKeyPressCount();
         int wrongKeyPressedCount = timerauswahlController.uebungsmodus.getWrongKeyPressedCount();
         if((keyPressedCount == 0)||(wrongKeyPressedCount == 0)){
-            return "0%";
+            return "0";
         }else {
             int fehlerquote = (wrongKeyPressedCount*100)/keyPressedCount;
             return String.valueOf(fehlerquote);
@@ -273,7 +284,7 @@ public class UebungsmodusController extends Programmstart {
                     zeitzener = 0;
                     zeitminuten++;
                 }
-                if (zeitminuten == TimerauswahlController.dauer){
+                if (zeitminuten == timerauswahlController.getDauer()){
                     reset();
                 }
                 zeit = String.valueOf(zeitminuten) + ":" + String.valueOf(zeitzener) + String.valueOf(zeiteiner);

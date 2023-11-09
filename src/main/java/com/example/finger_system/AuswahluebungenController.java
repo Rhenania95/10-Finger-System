@@ -5,11 +5,10 @@ import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import java.io.IOException;
 import javafx.stage.Stage;
-public class AuswahluebungenController{
+public class AuswahluebungenController extends Programmstart {
     private Stage stage;
     private Scene sceneHautpmenu;
     private Scene sceneTimerauswahl;
-    public static int[] uebergabe = new int[2];
     public void setStage(Stage stage) {
         this.stage = stage;
     }
@@ -18,102 +17,96 @@ public class AuswahluebungenController{
     }
     public void setSceneTimerauswahl(Scene sceneTimerauswahl) {
         this.sceneTimerauswahl = sceneTimerauswahl;}
+
     @FXML
-    public void Starthauptmenu(ActionEvent event) throws IOException {
+    private void Starthauptmenu(ActionEvent event) throws IOException {
         stage.setScene(sceneHautpmenu);
     }
-    private void setUebung(int[] set){
-        uebergabe [0] = set[0];
-        uebergabe [1] = set[0];
+    private void setUebung(int level, int stufe) {
+        timerauswahlController.setLevel(level);
+        timerauswahlController.setStufe(stufe);
+        uebungsmodusController.setLevel(level);
+        uebungsmodusController.setStufe(stufe);
+        stage.setScene(sceneTimerauswahl);
     }
     @FXML
     public void startLernen1(ActionEvent event) throws IOException {
-        setUebung(new int[]{1,1});
-        stage.setScene(sceneTimerauswahl);
+        setUebung(1,1);
     }
     @FXML
     public void startLernen2(ActionEvent event) throws IOException {
-        setUebung(new int[]{2,1});
-        stage.setScene(sceneTimerauswahl);
+        setUebung(2,1);
     }
     @FXML
     public void startLernen3(ActionEvent event) throws IOException {
-        setUebung(new int[]{3,1});
-        stage.setScene(sceneTimerauswahl);    }
+        setUebung(3,1);
+    }
     @FXML
     public void startLernen4(ActionEvent event) throws IOException {
-        setUebung(new int[]{4,1});
-        stage.setScene(sceneTimerauswahl);    }
+        setUebung(4,1);
+    }
     @FXML
     public void startLernen5(ActionEvent event) throws IOException {
-        setUebung(new int[]{5,1});
-        stage.setScene(sceneTimerauswahl);    }
+        setUebung(5,1);
+    }
     @FXML
     public void startLernen6(ActionEvent event) throws IOException {
-        setUebung(new int[]{6,1});
-        stage.setScene(sceneTimerauswahl);    }
+        setUebung(6,1);
+    }
     @FXML
     public void startLernen7(ActionEvent event) throws IOException {
-        setUebung(new int[]{7,1});
-        stage.setScene(sceneTimerauswahl);    }
+        setUebung(7,1);
+    }
     @FXML
     public void startLernen8(ActionEvent event) throws IOException {
-        setUebung(new int[]{8,1});
-        stage.setScene(sceneTimerauswahl);    }
+        setUebung(8,1);
+    }
     @FXML
     public void startLernen9(ActionEvent event) throws IOException {
-        setUebung(new int[]{9,1});
-        stage.setScene(sceneTimerauswahl);    }
+        setUebung(9,1);
+    }
     @FXML
     public void startLernen10(ActionEvent event) throws IOException {
-        setUebung(new int[]{10,1});
-        stage.setScene(sceneTimerauswahl);    }
+        setUebung(10,1);
+    }
     @FXML
     public void Starttrainieren1(ActionEvent event) throws IOException {
-        setUebung(new int[]{1,2});
-        stage.setScene(sceneTimerauswahl);
+        setUebung(1,2);
     }
     @FXML
     public void Starttrainieren2(ActionEvent event) throws IOException {
-        setUebung(new int[]{2,2});
-        stage.setScene(sceneTimerauswahl);
+        setUebung(2,2);
     }
     @FXML
     public void Starttrainieren3(ActionEvent event) throws IOException {
-        setUebung(new int[]{3,2});
-        stage.setScene(sceneTimerauswahl);      }
+        setUebung(3,2);
+    }
     @FXML
     public void Starttrainieren4(ActionEvent event) throws IOException {
-        setUebung(new int[]{4,2});
-        stage.setScene(sceneTimerauswahl);      }
+        setUebung(4,2);
+    }
     @FXML
     public void Starttrainieren5(ActionEvent event) throws IOException {
-        setUebung(new int[]{5,2});
-        stage.setScene(sceneTimerauswahl);
+        setUebung(5,2);
     }
     @FXML
     public void Starttrainieren6(ActionEvent event) throws IOException {
-        setUebung(new int[]{6,2});
-        stage.setScene(sceneTimerauswahl);
+        setUebung(6,2);
     }
     @FXML
     public void Starttrainieren7(ActionEvent event) throws IOException {
-        setUebung(new int[]{7,2});
-        stage.setScene(sceneTimerauswahl);
+        setUebung(7,2);
     }
     @FXML
     public void Starttrainieren8(ActionEvent event) throws IOException {
-        setUebung(new int[]{8,2});
-        stage.setScene(sceneTimerauswahl);
+        setUebung(8,2);
     }
     @FXML
     public void Starttrainieren9(ActionEvent event) throws IOException {
-        setUebung(new int[]{9,2});
-        stage.setScene(sceneTimerauswahl);
+        setUebung(9,2);
     }
     @FXML
     public void Starttrainieren10(ActionEvent event) throws IOException {
-        setUebung(new int[]{10,2});
-        stage.setScene(sceneTimerauswahl);
+        setUebung(10,2);
     }
 }

@@ -16,20 +16,34 @@ public class TimerauswahlController extends Programmstart {
     private Label falscheEingabe;
     @FXML
     private TextField textfeld;
-    public static int dauer;
-    public static int level;
-    public static int stufe;
+    public int dauer;
+    public int level;
+    public int stufe;
     public void setStage(Stage stage) {
         this.stage = stage;
     }
-    public void setSceneAuswahluebungen(Scene sceneAuswahluebungen) {this.sceneAuswahluebungen = sceneAuswahluebungen;}
-    public void setSceneUebungsmodus(Scene sceneUebungsmodus) {this.sceneUebungsmodus = sceneUebungsmodus;}
-    public void loadUebungsmodus(ActionEvent event) throws IOException {
-        level = AuswahluebungenController.uebergabe[0];
-        stufe = AuswahluebungenController.uebergabe[1];
+    public void setSceneAuswahluebungen(Scene sceneAuswahluebungen) {
+        this.sceneAuswahluebungen = sceneAuswahluebungen;
+    }
+    public void setSceneUebungsmodus(Scene sceneUebungsmodus) {
+        this.sceneUebungsmodus = sceneUebungsmodus;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+    public void setStufe(int stufe) {
+        this.stufe = stufe;
+    }
+    public int getDauer() {
+        return dauer;
+    }
+    private void loadUebungsmodus(ActionEvent event) throws IOException {
         uebungsmodus = new Uebungsmodus(level, stufe, "QWERTZ");
         stage.setScene(sceneUebungsmodus);
+        uebungsmodusController.setLevelStufeText();
     }
+    @FXML
     public void timereingabeprüfen(ActionEvent event) throws IOException{
         try {
             dauer = Integer.parseInt(textfeld.getText());
@@ -38,6 +52,7 @@ public class TimerauswahlController extends Programmstart {
             falscheEingabe.setText("!!Es können nur ganze Zahlen eingegeben werden!!");
         }
     }
+    @FXML
     public void timereingabeabbrechen(ActionEvent event) throws IOException {
         stage.setScene(sceneAuswahluebungen);
     }

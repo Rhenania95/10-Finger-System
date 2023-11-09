@@ -12,7 +12,7 @@ public class Programmstart extends Application {
     private HauptmenuController hauptmenuController;
     private AuswahluebungenController auswahluebungenController;
     protected static TimerauswahlController timerauswahlController;
-    private UebungsmodusController uebungsmodusController;
+    protected static UebungsmodusController uebungsmodusController;
     protected static ResultatfensterController resultatfensterController;
     protected Uebungsmodus uebungsmodus;
     @Override
