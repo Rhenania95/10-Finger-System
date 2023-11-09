@@ -60,7 +60,7 @@ mvn clean compile javafx:jlink
 target/app/bin/java -m com.example.10-Finger-System/com.example.10-Finger-System.Application
 ```
 
-Alternativ kann das Programm auch von einer IDE ausgeführt werden: navigieren hierzu in den Ordner src/main/java und ins Package com.example.10-Finger-System und führen Sie die Klasse MensApplication aus
+Alternativ kann das Programm auch von einer IDE ausgeführt werden: navigieren hierzu in den Ordner src/main/java und ins Package com.example.10-Finger-System und führen Sie die Klasse Programmstart aus
 
 ---
 
