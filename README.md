@@ -189,7 +189,7 @@ Das Sequenzdiagramm stellt den Ablauf des Programms dar. Erstellte Objekte sowie
 
 # 7) Dokumentation Sprint 2 <a name="paragraph6"></a>
 
-## 7.1) Taskliste für die Umsetzung der User Story Sprint 1 <a name="subparagraph9"></a>
+## 7.1) Taskliste für die Umsetzung der User Story Sprint 2 <a name="subparagraph9"></a>
 ### User Story 6 - Hauptmenü (45')
 | Task                                      | Beschreibung                                                | Aufwandschätzung |
 |-------------------------------------------|--------------------------------------------------------------|-------------------|
