@@ -137,6 +137,34 @@ Package com.example.10-Finger-System und führen Sie die Klasse Programmstart au
 # 6) Dokumentation Sprint 1 <a name="paragraph5"></a>
 
 ## 6.1) Taskliste für die Umsetzung der User Story Sprint 1 <a name="subparagraph4"></a>
+### User Story 1 - Textausgabe und Eingabe (2h 15')
+| Task                                      | Beschreibung                                                | Aufwandschätzung |
+|-------------------------------------------|--------------------------------------------------------------|-------------------|
+| Textausgabe implementieren                | Code schreiben, um Text auf dem Bildschirm auszugeben        | 30'               |
+| Eingabeimplementierung umsetzen           | Code schreiben, um Benutzereingaben einzulesen und anzeigen  | 45'               |
+
+### User Story 2 - Fehler- und Anschlagzählung (1h)
+| Task                                      | Beschreibung                                                | Aufwandschätzung |
+|-------------------------------------------|--------------------------------------------------------------|-------------------|
+| Funktionen zur Fehler- und Anschlagzählung hinzufügen | Code schreiben, um Fehler und Anschläge zu zählen und speichern | 1h          |
+
+### User Story 3 - Abbruchfunktion (1h 30')
+| Task                                      | Beschreibung                                                | Aufwandschätzung |
+|-------------------------------------------|--------------------------------------------------------------|-------------------|
+| Fehlerkorrekturfunktion implementieren     | Code schreiben, um Fehler direkt nach der Eingabe zu korrigieren | 30'               |
+| Abbruchfunktion in die Benutzerschnittstelle integrieren | Schaltfläche zum Abbrechen hinzufügen              | 1h                |
+
+### User Story 4 - Überprüfung (1h)
+| Task                                      | Beschreibung                                                | Aufwandschätzung |
+|-------------------------------------------|--------------------------------------------------------------|-------------------|
+| Fehlermeldung bei falschem Buchstaben implementieren | Code schreiben, um eine Fehlermeldung auszugeben, wenn ein falscher Buchstabe eingegeben wurde | 30' |
+| Logik für den Fortschritt implementieren | Überprüfen, ob der richtige Buchstabe eingegeben wurde, bevor der Benutzer zum nächsten Buchstaben gelangen kann | 45' |
+
+### User Story  5 - Zufällige Levels erzeugen (1h)
+| Task                                      | Beschreibung                                                | Aufwandschätzung |
+|-------------------------------------------|--------------------------------------------------------------|-------------------|
+| Methode zur Erzeugung zufälliger Buchstabenreihen implementieren | Funktion schreiben, um zufällige Buchstabenreihen aus einer vorgegebenen Auswahl zu generieren | 1h |
+
 
 ## 6.2) Anreicherung der User Stories für die Umsetzung <a name="subparagraph5"></a>
 
