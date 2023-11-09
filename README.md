@@ -137,7 +137,7 @@ Package com.example.10-Finger-System und führen Sie die Klasse Programmstart au
 # 6) Dokumentation Sprint 1 <a name="paragraph5"></a>
 
 ## 6.1) Taskliste für die Umsetzung der User Story Sprint 1 <a name="subparagraph4"></a>
-### User Story 1 - Textausgabe und Eingabe (2h 15')
+### User Story 1 - Textausgabe und Eingabe (1h 15')
 | Task                                      | Beschreibung                                                | Aufwandschätzung |
 |-------------------------------------------|--------------------------------------------------------------|-------------------|
 | Textausgabe implementieren                | Code schreiben, um Text auf dem Bildschirm auszugeben        | 30'               |
@@ -154,7 +154,7 @@ Package com.example.10-Finger-System und führen Sie die Klasse Programmstart au
 | Fehlerkorrekturfunktion implementieren     | Code schreiben, um Fehler direkt nach der Eingabe zu korrigieren | 30'               |
 | Abbruchfunktion in die Benutzerschnittstelle integrieren | Schaltfläche zum Abbrechen hinzufügen              | 1h                |
 
-### User Story 4 - Überprüfung (1h)
+### User Story 4 - Überprüfung (1h15)
 | Task                                      | Beschreibung                                                | Aufwandschätzung |
 |-------------------------------------------|--------------------------------------------------------------|-------------------|
 | Fehlermeldung bei falschem Buchstaben implementieren | Code schreiben, um eine Fehlermeldung auszugeben, wenn ein falscher Buchstabe eingegeben wurde | 30' |
