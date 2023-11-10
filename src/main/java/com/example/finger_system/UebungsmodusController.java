@@ -233,6 +233,7 @@ public class UebungsmodusController extends Programmstart {
         restartText.setFill(Color.BLACK);
         restartText.setFont(Font.font(fontSize));
         textFlowPane.getChildren().add(restartText);
+        textAusgabe.setText("");
         textAusgabe.setGraphic(textFlowPane);
         fehlerAusgabe.setText("0");
         anschlägeAusgabe.setText("0");
