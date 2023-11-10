@@ -139,7 +139,7 @@ Wenn man die Zeit eingestellt hat, kann man mit der Übung beginnen. Im unteren 
 | Story 17 |          |
 
 ---
-# 6.)UML Package, Klassen- und Sequenzdiagramm"></a>
+# 6.)UML Package, Klassen- und Sequenzdiagramm<a name="subparagraph6"></a>
 
 # Packagediagramm
 
@@ -184,9 +184,9 @@ Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese
 - Nach Abschluss einer Übung werden die Ergebnisse im Resultatscreen angezeigt.
 
 
-# 6) Dokumentation Sprint 1 <a name="paragraph5"></a>
+# 7) Dokumentation Sprint 1 <a name="paragraph5"></a>
 
-## 6.1) Taskliste für die Umsetzung der User Story Sprint 1 <a name="subparagraph4"></a>
+## 7.1) Taskliste für die Umsetzung der User Story Sprint 1 <a name="subparagraph4"></a>
 
 ### User Story 1 - Textausgabe und Eingabe (1h 15')
 
@@ -221,15 +221,15 @@ Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese
 |------------------------------------------------------------------|------------------------------------------------------------------------------------------------|------------------|
 | Methode zur Erzeugung zufälliger Buchstabenreihen implementieren | Funktion schreiben, um zufällige Buchstabenreihen aus einer vorgegebenen Auswahl zu generieren | 1h               |
 
-## 6.2) Dokumentation wichtiger Code Snippets <a name="subparagraph7"></a>
+## 7.2) Dokumentation wichtiger Code Snippets <a name="subparagraph7"></a>
 
-## 6.3) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph8"></a>
+## 7.3) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph8"></a>
 
 ---
 
-# 7) Dokumentation Sprint 2 <a name="paragraph6"></a>
+# 8) Dokumentation Sprint 2 <a name="paragraph6"></a>
 
-## 7.1) Taskliste für die Umsetzung der User Story Sprint 2 <a name="subparagraph9"></a>
+## 8.1) Taskliste für die Umsetzung der User Story Sprint 2 <a name="subparagraph9"></a>
 
 ### User Story 6 - Hauptmenü (45')
 
@@ -255,7 +255,7 @@ Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese
 | Task                                              | Beschreibung                                                                              | Aufwandschätzung |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------|------------------|
 | Benutzerschnittstelle für Lektionsdauer erstellen | Eingabefeld oder Dropdown-Menü erstellen, damit Benutzer die Lektionsdauer auswählen kann | 1h               |
-## 7.2) Dokumentation wichtiger Code Snippets <a name="subparagraph12"></a>
+## 8.2) Dokumentation wichtiger Code Snippets <a name="subparagraph12"></a>
 
-## 7.3) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph13"></a>
+## 8.3) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph13"></a>
 
