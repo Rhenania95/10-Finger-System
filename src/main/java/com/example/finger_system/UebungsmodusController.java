@@ -25,7 +25,6 @@ public class UebungsmodusController extends Programmstart {
     private Label fehlerAusgabe;
     private Stage stage;
     private Scene sceneResultatfenster;
-    private int aktuellerbuchstabe;
     @FXML
     private Label textAusgabe;
     @FXML
