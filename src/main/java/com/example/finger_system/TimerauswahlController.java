@@ -10,12 +10,12 @@ import java.io.IOException;
 
 public class TimerauswahlController extends Programmstart {
     private Stage stage;
-    private Scene sceneUebungsmodus;
+    Scene sceneUebungsmodus;
     private Scene sceneAuswahluebungen;
     @FXML
     private Label falscheEingabe;
     @FXML
-    private TextField textfeld;
+    TextField textfeld;
     public int dauer;
     public int level;
     public int stufe;
@@ -25,6 +25,10 @@ public class TimerauswahlController extends Programmstart {
     public void setSceneAuswahluebungen(Scene sceneAuswahluebungen) {
         this.sceneAuswahluebungen = sceneAuswahluebungen;
     }
+
+    /**
+     * @param sceneUebungsmodus
+     */
     public void setSceneUebungsmodus(Scene sceneUebungsmodus) {
         this.sceneUebungsmodus = sceneUebungsmodus;
     }
