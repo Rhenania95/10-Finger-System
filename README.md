@@ -8,16 +8,15 @@
 3. [Kurze Bedienungsanleitung](#paragraph2)
 4. [User Stories](#paragraph3)
 5. [Releaseplan mit den Ausbaustufen](#paragraph4)
-6. [Dokumentation Sprint 1](#paragraph5)
+6.  [UML Package, Klassen- und Sequenzdiagramm](#subparagraph6)
+7. [Dokumentation Sprint 1](#paragraph5)
     1. [Taskliste für die Umsetzung der User Story (Schätzung in Stunden)](#subparagraph4)
-    2. [UML Package, Klassen- und Sequenzdiagramm](#subparagraph6)
-    3. [Dokumentation wichtiger Code Snippets](#subparagraph7)
-    4. [Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories](#subparagraph8)
-7. [Dokumentation Sprint 2](#paragraph6)
+    2. [Dokumentation wichtiger Code Snippets](#subparagraph7)
+    3. [Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories](#subparagraph8)
+8. [Dokumentation Sprint 2](#paragraph6)
     1. [Taskliste für die Umsetzung der User Story (Schätzung in Stunden)](#subparagraph9)
-    2. [UML Package, Klassen- und Sequenzdiagramm](#subparagraph11)
-    3. [Dokumentation wichtiger Code Snippets](#subparagraph12)
-    4. [Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories](#subparagraph13)
+    2. [Dokumentation wichtiger Code Snippets](#subparagraph12)
+    3. [Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories](#subparagraph13)
 
 ---
 
@@ -140,45 +139,7 @@ Wenn man die Zeit eingestellt hat, kann man mit der Übung beginnen. Im unteren 
 | Story 17 |          |
 
 ---
-
-# 6) Dokumentation Sprint 1 <a name="paragraph5"></a>
-
-## 6.1) Taskliste für die Umsetzung der User Story Sprint 1 <a name="subparagraph4"></a>
-
-### User Story 1 - Textausgabe und Eingabe (1h 15')
-
-| Task                            | Beschreibung                                                | Aufwandschätzung |
-|---------------------------------|-------------------------------------------------------------|------------------|
-| Textausgabe implementieren      | Code schreiben, um Text auf dem Bildschirm auszugeben       | 30'              |
-| Eingabeimplementierung umsetzen | Code schreiben, um Benutzereingaben einzulesen und anzeigen | 45'              |
-
-### User Story 2 - Fehler- und Anschlagzählung (1h)
-
-| Task                                                  | Beschreibung                                                    | Aufwandschätzung |
-|-------------------------------------------------------|-----------------------------------------------------------------|------------------|
-| Funktionen zur Fehler- und Anschlagzählung hinzufügen | Code schreiben, um Fehler und Anschläge zu zählen und speichern | 1h               |
-
-### User Story 3 - Abbruchfunktion (1h 30')
-
-| Task                                                     | Beschreibung                                                     | Aufwandschätzung |
-|----------------------------------------------------------|------------------------------------------------------------------|------------------|
-| Fehlerkorrekturfunktion implementieren                   | Code schreiben, um Fehler direkt nach der Eingabe zu korrigieren | 30'              |
-| Abbruchfunktion in die Benutzerschnittstelle integrieren | Schaltfläche zum Abbrechen hinzufügen                            | 1h               |
-
-### User Story 4 - Überprüfung (1h15)
-
-| Task                                                 | Beschreibung                                                                                                     | Aufwandschätzung |
-|------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------------|
-| Fehlermeldung bei falschem Buchstaben implementieren | Code schreiben, um eine Fehlermeldung auszugeben, wenn ein falscher Buchstabe eingegeben wurde                   | 30'              |
-| Logik für den Fortschritt implementieren             | Überprüfen, ob der richtige Buchstabe eingegeben wurde, bevor der Benutzer zum nächsten Buchstaben gelangen kann | 45'              |
-
-### User Story  5 - Zufällige Levels erzeugen (1h)
-
-| Task                                                             | Beschreibung                                                                                   | Aufwandschätzung |
-|------------------------------------------------------------------|------------------------------------------------------------------------------------------------|------------------|
-| Methode zur Erzeugung zufälliger Buchstabenreihen implementieren | Funktion schreiben, um zufällige Buchstabenreihen aus einer vorgegebenen Auswahl zu generieren | 1h               |
-
-## 6.2) UML Package, Klassen- und Sequenzdiagramm <a name="subparagraph6"></a>
+# 6.)UML Package, Klassen- und Sequenzdiagramm"></a>
 
 # Packagediagramm
 
@@ -222,9 +183,47 @@ Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese
 - Im Übungsmodus gibt der Benutzer die entsprechenden Zeichen ein.
 - Nach Abschluss einer Übung werden die Ergebnisse im Resultatscreen angezeigt.
 
-## 6.3) Dokumentation wichtiger Code Snippets <a name="subparagraph7"></a>
 
-## 6.4) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph8"></a>
+# 6) Dokumentation Sprint 1 <a name="paragraph5"></a>
+
+## 6.1) Taskliste für die Umsetzung der User Story Sprint 1 <a name="subparagraph4"></a>
+
+### User Story 1 - Textausgabe und Eingabe (1h 15')
+
+| Task                            | Beschreibung                                                | Aufwandschätzung |
+|---------------------------------|-------------------------------------------------------------|------------------|
+| Textausgabe implementieren      | Code schreiben, um Text auf dem Bildschirm auszugeben       | 30'              |
+| Eingabeimplementierung umsetzen | Code schreiben, um Benutzereingaben einzulesen und anzeigen | 45'              |
+
+### User Story 2 - Fehler- und Anschlagzählung (1h)
+
+| Task                                                  | Beschreibung                                                    | Aufwandschätzung |
+|-------------------------------------------------------|-----------------------------------------------------------------|------------------|
+| Funktionen zur Fehler- und Anschlagzählung hinzufügen | Code schreiben, um Fehler und Anschläge zu zählen und speichern | 1h               |
+
+### User Story 3 - Abbruchfunktion (1h 30')
+
+| Task                                                     | Beschreibung                                                     | Aufwandschätzung |
+|----------------------------------------------------------|------------------------------------------------------------------|------------------|
+| Fehlerkorrekturfunktion implementieren                   | Code schreiben, um Fehler direkt nach der Eingabe zu korrigieren | 30'              |
+| Abbruchfunktion in die Benutzerschnittstelle integrieren | Schaltfläche zum Abbrechen hinzufügen                            | 1h               |
+
+### User Story 4 - Überprüfung (1h15)
+
+| Task                                                 | Beschreibung                                                                                                     | Aufwandschätzung |
+|------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------------|
+| Fehlermeldung bei falschem Buchstaben implementieren | Code schreiben, um eine Fehlermeldung auszugeben, wenn ein falscher Buchstabe eingegeben wurde                   | 30'              |
+| Logik für den Fortschritt implementieren             | Überprüfen, ob der richtige Buchstabe eingegeben wurde, bevor der Benutzer zum nächsten Buchstaben gelangen kann | 45'              |
+
+### User Story  5 - Zufällige Levels erzeugen (1h)
+
+| Task                                                             | Beschreibung                                                                                   | Aufwandschätzung |
+|------------------------------------------------------------------|------------------------------------------------------------------------------------------------|------------------|
+| Methode zur Erzeugung zufälliger Buchstabenreihen implementieren | Funktion schreiben, um zufällige Buchstabenreihen aus einer vorgegebenen Auswahl zu generieren | 1h               |
+
+## 6.2) Dokumentation wichtiger Code Snippets <a name="subparagraph7"></a>
+
+## 6.3) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph8"></a>
 
 ---
 
@@ -256,10 +255,7 @@ Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese
 | Task                                              | Beschreibung                                                                              | Aufwandschätzung |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------|------------------|
 | Benutzerschnittstelle für Lektionsdauer erstellen | Eingabefeld oder Dropdown-Menü erstellen, damit Benutzer die Lektionsdauer auswählen kann | 1h               |
+## 7.2) Dokumentation wichtiger Code Snippets <a name="subparagraph12"></a>
 
-## 7.2) UML Package, Klassen- und Sequenzdiagramm <a name="subparagraph11"></a>
-
-## 7.3) Dokumentation wichtiger Code Snippets <a name="subparagraph12"></a>
-
-## 7.4) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph13"></a>
+## 7.3) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph13"></a>
 
