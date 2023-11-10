@@ -34,7 +34,7 @@
                 </Label>
                 <Label fx:id="textAusgabe" text="Tastendruck startet die Übung" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <font>
-                        <Font size="92.0" />
+                        <Font size="50.0" />
                     </font>
                 </Label>
                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anschläge:" translateX="1090.0" translateY="-25.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
