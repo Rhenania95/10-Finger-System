@@ -8,7 +8,7 @@
 3. [Kurze Bedienungsanleitung](#paragraph2)
 4. [User Stories](#paragraph3)
 5. [Releaseplan mit den Ausbaustufen](#paragraph4)
-6.  [UML Package, Klassen- und Sequenzdiagramm](#subparagraph6)
+6. [UML Package, Klassen- und Sequenzdiagramm](#subparagraph6)
 7. [Dokumentation Sprint 1](#paragraph5)
     1. [Taskliste für die Umsetzung der User Story (Schätzung in Stunden)](#subparagraph4)
     2. [Dokumentation wichtiger Code Snippets](#subparagraph7)
@@ -85,14 +85,34 @@ Package com.example.10-Finger-System und führen Sie die Klasse Programmstart au
 ---
 
 # 3.) Kurze Bedienungsanleitung <a name="paragraph2"></a>
+
 ## Startseite
-Auf der Startseite kann man zwischen den verschiedenen Bereichen navigieren. Man kann zum einen den Übungs- Test oder Spielmodus aufrufen, wo man seine Fertigkeiten verbessern kann. Ausserdem kann man in den Statistikbereich navigieren. Im Einstellungsbereich kann man grundsätzliche Einstellungen am Programm vornehmen. Zum Beispiel die Sprache oder die Tastatur ändern. Im Abschnitt Credits werden die Ersteller des Projekts erwähnt. Und mit beenden kann man die Anwendung beenden.
+
+Auf der Startseite kann man zwischen den verschiedenen Bereichen navigieren. Man kann zum einen den Übungs- Test oder
+Spielmodus aufrufen, wo man seine Fertigkeiten verbessern kann. Ausserdem kann man in den Statistikbereich navigieren.
+Im Einstellungsbereich kann man grundsätzliche Einstellungen am Programm vornehmen. Zum Beispiel die Sprache oder die
+Tastatur ändern. Im Abschnitt Credits werden die Ersteller des Projekts erwähnt. Und mit beenden kann man die Anwendung
+beenden.
 
 ## Übungsmodus + Timer einstellen
-In diesem Bildschirm kann man auswählen welche Buchstaben man trainieren möchte. Auf der linken Seite steht, welche Buchstaben in der jeweiligen Übung drannkommen. Wenn man auf lernen drückt, kommen nur die links erwähnten Zeichen dran. Wenn man auf trainieren drückt, kommen sämtliche Zeichen, auch solche aus vorherigen Übungen dran. Wenn man sich für eine Übung und einen Modus entschieden hat, kann man einstellen wie lange die Übung gehen soll. Wenn man erwas anderes als ganze Zahlen eingibt, erscheint eine Fehlermeldung. Ausserdem erhält man im oberen Bildschirm eine Anleitung wie man die Finger zu positionieren hat und welche Farbe welche Bedeutung hat.
+
+In diesem Bildschirm kann man auswählen welche Buchstaben man trainieren möchte. Auf der linken Seite steht, welche
+Buchstaben in der jeweiligen Übung drannkommen. Wenn man auf lernen drückt, kommen nur die links erwähnten Zeichen dran.
+Wenn man auf trainieren drückt, kommen sämtliche Zeichen, auch solche aus vorherigen Übungen dran. Wenn man sich für
+eine Übung und einen Modus entschieden hat, kann man einstellen wie lange die Übung gehen soll. Wenn man erwas anderes
+als ganze Zahlen eingibt, erscheint eine Fehlermeldung. Ausserdem erhält man im oberen Bildschirm eine Anleitung wie man
+die Finger zu positionieren hat und welche Farbe welche Bedeutung hat.
 
 ## Lektion und Auswertung
-Wenn man die Zeit eingestellt hat, kann man mit der Übung beginnen. Im unteren Bildschirmteil sieht man mit welchen Fingern man die in dieser Übung erlernten Tasten betätigen soll. Mit Knopfdrücken beginnt die Übung. Oben auf der linken Seite wird angezeigt, welche Lektion man bearbeitet und in welchem Modus man sich befindet. Auf der rechten Seite befindet sich der Timer, ein Anschläge- und ein Fehlerzähle. Wenn die Zeit abgelaufen ist wird man automatisch ins Auswertungsmenu geleitet. Wenn man den Abbruchbutton drückt, wird ein Alert ausgegeben ob man die Übung wirklich beenden will. Wenn man das bestätigt, wird man ebenfalls in den Auswertungsscreen geleitet. Dort sieht man zu oberst, wie lange man gelernt hat, darunter sieht man die getippten Zeichen und die daraus berechneten Anschläge pro Minute. Ausserdem werden die Fehler angezeigt und daraus wird die Fehlerquote berechnet.
+
+Wenn man die Zeit eingestellt hat, kann man mit der Übung beginnen. Im unteren Bildschirmteil sieht man mit welchen
+Fingern man die in dieser Übung erlernten Tasten betätigen soll. Mit Knopfdrücken beginnt die Übung. Oben auf der linken
+Seite wird angezeigt, welche Lektion man bearbeitet und in welchem Modus man sich befindet. Auf der rechten Seite
+befindet sich der Timer, ein Anschläge- und ein Fehlerzähle. Wenn die Zeit abgelaufen ist wird man automatisch ins
+Auswertungsmenu geleitet. Wenn man den Abbruchbutton drückt, wird ein Alert ausgegeben ob man die Übung wirklich beenden
+will. Wenn man das bestätigt, wird man ebenfalls in den Auswertungsscreen geleitet. Dort sieht man zu oberst, wie lange
+man gelernt hat, darunter sieht man die getippten Zeichen und die daraus berechneten Anschläge pro Minute. Ausserdem
+werden die Fehler angezeigt und daraus wird die Fehlerquote berechnet.
 
 ---
 
@@ -139,6 +159,7 @@ Wenn man die Zeit eingestellt hat, kann man mit der Übung beginnen. Im unteren 
 | Story 17 |          |
 
 ---
+
 # 6.)UML Package, Klassen- und Sequenzdiagramm<a name="subparagraph6"></a>
 
 # Packagediagramm
@@ -155,28 +176,33 @@ Im Klassendiagramm werden die Beziehungen von Klassen untereinander modelliert:
 # Sequenzdiagramm
 
 Das Sequenzdiagramm stellt den Ablauf des Programms dar. Erstellte Objekte sowie deren Lebensdauer werden verdeutlicht.
-Die Anwendung "Tipp Dich Fitt" verwendet verschiedene Klassen, die in einem sequentiellen Ablauf interagieren. Hier ist eine Übersicht über die wichtigsten Interaktionen zwischen den Klassen:
+Die Anwendung "Tipp Dich Fitt" verwendet verschiedene Klassen, die in einem sequentiellen Ablauf interagieren. Hier ist
+eine Übersicht über die wichtigsten Interaktionen zwischen den Klassen:
 
 ![diagramm1](https://github.com/Rhenania95/10-Finger-System/assets/147594404/25bce62e-a52c-4f9e-bf06-ec434c4a95ef)
 
 ## Klassenbeschreibungen
 
 ### TimerauswahlController:
+
 - Generiert eine Übung, wenn der Benutzer auf "Bestätigen" drückt.
 - Gibt die erstellte Übung an den UebungsmodusController weiter.
 
 ### UebungsmodusController:
+
 - Holt Übungsdaten aus der Uebung-Klasse.
 - Verarbeitet die Benutzereingaben während der Übung.
 - Gibt die benötigten Daten an den ResultatscreenController weiter, nachdem die Übung abgeschlossen ist.
 
 ### ResultatscreenController:
+
 - Zeigt die Ergebnisse der abgeschlossenen Übung an.
 - Ermöglicht dem Benutzer, zum Hauptmenü zurückzukehren.
 
 ## Anwendung starten
 
-Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese startet die gesamte Anwendung und steuert den Ablauf zwischen den verschiedenen Controllern und Ansichten.
+Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese startet die gesamte Anwendung und steuert
+den Ablauf zwischen den verschiedenen Controllern und Ansichten.
 
 ## Benutzerinteraktion
 
@@ -184,7 +210,6 @@ Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese
 - Im Timerauswahl-Fenster kann der Benutzer die Timer-Einstellungen vornehmen.
 - Im Übungsmodus gibt der Benutzer die entsprechenden Zeichen ein.
 - Nach Abschluss einer Übung werden die Ergebnisse im Resultatscreen angezeigt.
-
 
 # 7) Dokumentation Sprint 1 <a name="paragraph5"></a>
 
@@ -224,7 +249,9 @@ Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese
 | Methode zur Erzeugung zufälliger Buchstabenreihen implementieren | Funktion schreiben, um zufällige Buchstabenreihen aus einer vorgegebenen Auswahl zu generieren | 1h               |
 
 ## 7.2) Dokumentation wichtiger Code Snippets <a name="subparagraph7"></a>
-Ein Punkt der uns in unserem Projekt besonders Mühe bereitete war die Weitergabe von Informationen unter den verschiedenen Klassen.
+
+Ein Punkt der uns in unserem Projekt besonders Mühe bereitete war die Weitergabe von Informationen unter den
+verschiedenen Klassen.
 
 ```
 private HauptmenuController hauptmenuController;
@@ -235,9 +262,12 @@ protected static ResultatfensterController resultatfensterController;
 protected Uebungsmodus uebungsmodus;
 ```
 
-Der Codesnippet für Sprint 1 ist dementsprechend auch nicht sehr komplex oder schwierig. Aber er ist sehr wichtig für unser Programm. Der Snippet bedindet sich in der Programmstartfunktion und wird abgearbeitet sobald das Programm startet. Das wichtige an diesem Snippet ist vorallem, dass wir für jede fxml Datei einen eigenen Controller erstellt haben. Da alle diese Controller am Anfang erstellt werden, wurde der Informationsaustausch viel einfacher. So können wir zum Beispiel auf die Funktionen der anderen Controller zugreifen. Ausserdem haben wir eine Variable für den Uebungsmodus erstellt, da wir diese in mehreren Klassen benötigen.
-
-## 7.3) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph8"></a>
+Der Codesnippet für Sprint 1 ist dementsprechend auch nicht sehr komplex oder schwierig. Aber er ist sehr wichtig für
+unser Programm. Der Snippet bedindet sich in der Programmstartfunktion und wird abgearbeitet sobald das Programm
+startet. Das wichtige an diesem Snippet ist vorallem, dass wir für jede fxml Datei einen eigenen Controller erstellt
+haben. Da alle diese Controller am Anfang erstellt werden, wurde der Informationsaustausch viel einfacher. So können wir
+zum Beispiel auf die Funktionen der anderen Controller zugreifen. Ausserdem haben wir eine Variable für den Uebungsmodus
+erstellt, da wir diese in mehreren Klassen benötigen.
 
 ---
 
@@ -269,8 +299,21 @@ Der Codesnippet für Sprint 1 ist dementsprechend auch nicht sehr komplex oder s
 | Task                                              | Beschreibung                                                                              | Aufwandschätzung |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------|------------------|
 | Benutzerschnittstelle für Lektionsdauer erstellen | Eingabefeld oder Dropdown-Menü erstellen, damit Benutzer die Lektionsdauer auswählen kann | 1h               |
+
 ## 8.2) Dokumentation wichtiger Code Snippets <a name="subparagraph12"></a>
-Ein wichtiger Punkt in unserem Projekt war die Implementierung des Timers. Dieser sollte die Zeit anzeigen und nach Ablauf der Zeit die Übung beenden. Doe grosse schwierigkeit war, dass während die Übung läuft der zähler laufen soll und gleichzeitig soll aber das restliche Programm normal laufen. Der Timer wurde in der Klasse UebungsmodusController implementiert. Der Timer wird mit der Funktion startTimer gestartet. Diese Funktion wird aus dem Programmstart aufgerufen, sobald die erste Taste betätigt wird. Der Timer wird mit der Klasse Timeline implementiert. Die Klasse Timeline ist eine Klasse von JavaFX und wird verwendet um Animationen zu erstellen. Die Klasse Timeline hat eine Funktion namens KeyFrame. Diese Funktion wird in einem bestimmten Intervall aufgerufen. In unserem Fall wird die Funktion jede Sekunde aufgerufen. In der Funktion wird die Zeit hochgezählt und die Zeit wird in einem Label angezeigt. Somit kann zwischen zwei Aufrufen der Funktion (Also während einer Sekunde das restliche Programm laufen). Wenn die Zeit abgelaufen ist, oder der Abbruchbutton betätigt wird die Funktion reset aufgerufen. In dieser Funktion wird die Übung beendet, zurückgesetzt und das Resultatfenster wird angezeigt.
+
+Ein wichtiger Punkt in unserem Projekt war die Implementierung des Timers. Dieser sollte die Zeit anzeigen und nach
+Ablauf der Zeit die Übung beenden. Doe grosse schwierigkeit war, dass während die Übung läuft der zähler laufen soll und
+gleichzeitig soll aber das restliche Programm normal laufen. Der Timer wurde in der Klasse UebungsmodusController
+implementiert. Der Timer wird mit der Funktion startTimer gestartet. Diese Funktion wird aus dem Programmstart
+aufgerufen, sobald die erste Taste betätigt wird. Der Timer wird mit der Klasse Timeline implementiert. Die Klasse
+Timeline ist eine Klasse von JavaFX und wird verwendet um Animationen zu erstellen. Die Klasse Timeline hat eine
+Funktion namens KeyFrame. Diese Funktion wird in einem bestimmten Intervall aufgerufen. In unserem Fall wird die
+Funktion jede Sekunde aufgerufen. In der Funktion wird die Zeit hochgezählt und die Zeit wird in einem Label angezeigt.
+Somit kann zwischen zwei Aufrufen der Funktion (Also während einer Sekunde das restliche Programm laufen). Wenn die Zeit
+abgelaufen ist, oder der Abbruchbutton betätigt wird die Funktion reset aufgerufen. In dieser Funktion wird die Übung
+beendet, zurückgesetzt und das Resultatfenster wird angezeigt.
+
 ```
 Duration duration = Duration.seconds(1);
 KeyFrame keyFrame = new KeyFrame(duration, new EventHandler<ActionEvent>() {
@@ -296,5 +339,10 @@ timeline.getKeyFrames().add(keyFrame);
 timeline.setCycleCount(Timeline.INDEFINITE);
 timeline.play();
 ```
-## 8.3) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph13"></a>
 
+# 9) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories  <a name="paragraph6"></a>
+
+| Testfall | Method   | Klasse                 | Ablauf                                                                 | Ergebniss   |
+|----------|----------|------------------------|------------------------------------------------------------------------|-------------|
+| 1        | getDauer | TimerauswahlController | Den benutzerdefinierten Wert ist als Dauerwert benutzt und gespeichert | erfolgreich |
+| 2        | main     | Programmstart          | Der Programm wurde gestartet                                           | erfolgreich |
