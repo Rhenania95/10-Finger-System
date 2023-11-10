@@ -224,6 +224,18 @@ Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese
 | Methode zur Erzeugung zufälliger Buchstabenreihen implementieren | Funktion schreiben, um zufällige Buchstabenreihen aus einer vorgegebenen Auswahl zu generieren | 1h               |
 
 ## 7.2) Dokumentation wichtiger Code Snippets <a name="subparagraph7"></a>
+Ein Punkt der uns in unserem Projekt besonders Mühe bereitete war die Weitergabe von Informationen unter den verschiedenen Klassen.
+
+```
+private HauptmenuController hauptmenuController;
+private AuswahluebungenController auswahluebungenController;
+protected static TimerauswahlController timerauswahlController;
+protected static UebungsmodusController uebungsmodusController;
+protected static ResultatfensterController resultatfensterController;
+protected Uebungsmodus uebungsmodus;
+```
+
+Der Codesnippet für Sprint 1 ist dementsprechend auch nicht sehr komplex oder schwierig. Aber er ist sehr wichtig für unser Programm. Der Snippet bedindet sich in der Programmstartfunktion und wird abgearbeitet sobald das Programm startet. Das wichtige an diesem Snippet ist vorallem, dass wir für jede fxml Datei einen eigenen Controller erstellt haben. Da alle diese Controller am Anfang erstellt werden, wurde der Informationsaustausch viel einfacher. So können wir zum Beispiel auf die Funktionen der anderen Controller zugreifen. Ausserdem haben wir eine Variable für den Uebungsmodus erstellt, da wir diese in mehreren Klassen benötigen.
 
 ## 7.3) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph8"></a>
 
@@ -258,6 +270,31 @@ Um die Anwendung auszuführen, führen Sie die `Programmstart`-Klasse aus. Diese
 |---------------------------------------------------|-------------------------------------------------------------------------------------------|------------------|
 | Benutzerschnittstelle für Lektionsdauer erstellen | Eingabefeld oder Dropdown-Menü erstellen, damit Benutzer die Lektionsdauer auswählen kann | 1h               |
 ## 8.2) Dokumentation wichtiger Code Snippets <a name="subparagraph12"></a>
-
+Ein wichtiger Punkt in unserem Projekt war die Implementierung des Timers. Dieser sollte die Zeit anzeigen und nach Ablauf der Zeit die Übung beenden. Doe grosse schwierigkeit war, dass während die Übung läuft der zähler laufen soll und gleichzeitig soll aber das restliche Programm normal laufen. Der Timer wurde in der Klasse UebungsmodusController implementiert. Der Timer wird mit der Funktion startTimer gestartet. Diese Funktion wird aus dem Programmstart aufgerufen, sobald die erste Taste betätigt wird. Der Timer wird mit der Klasse Timeline implementiert. Die Klasse Timeline ist eine Klasse von JavaFX und wird verwendet um Animationen zu erstellen. Die Klasse Timeline hat eine Funktion namens KeyFrame. Diese Funktion wird in einem bestimmten Intervall aufgerufen. In unserem Fall wird die Funktion jede Sekunde aufgerufen. In der Funktion wird die Zeit hochgezählt und die Zeit wird in einem Label angezeigt. Somit kann zwischen zwei Aufrufen der Funktion (Also während einer Sekunde das restliche Programm laufen). Wenn die Zeit abgelaufen ist, oder der Abbruchbutton betätigt wird die Funktion reset aufgerufen. In dieser Funktion wird die Übung beendet, zurückgesetzt und das Resultatfenster wird angezeigt.
+```
+Duration duration = Duration.seconds(1);
+KeyFrame keyFrame = new KeyFrame(duration, new EventHandler<ActionEvent>() {
+@Override
+public void handle(ActionEvent event) {
+zeiteiner++;
+if (zeiteiner == 10) {
+zeiteiner = 0;
+zeitzener++;
+}
+if (zeitzener == 6) {
+zeitzener = 0;
+zeitminuten++;
+}
+if (zeitminuten == timerauswahlController.getDauer() && zeiteiner == 0) {
+reset();
+}
+zeit = String.valueOf(zeitminuten) + ":" + String.valueOf(zeitzener) + String.valueOf(zeiteiner);
+zeitausgabe.setText(zeit);
+}
+});
+timeline.getKeyFrames().add(keyFrame);
+timeline.setCycleCount(Timeline.INDEFINITE);
+timeline.play();
+```
 ## 8.3) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories <a name="subparagraph13"></a>
 
