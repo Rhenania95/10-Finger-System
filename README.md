@@ -149,12 +149,12 @@ Mit dem Packagediagramm wird die Package Struktur dargestellt.
 # Klasseniagramm
 
 Mit dem Packagediagramm wird die Package Struktur dargestellt.
+![klassen-diagramm](https://github.com/Rhenania95/10-Finger-System/assets/147594404/6d391a06-abd7-444c-9165-f8fb80447550)
 
 # Sequenzdiagramm
 
 Das Sequenzdiagramm stellt den Ablauf des Programms dar. Erstellte Objekte sowie deren Lebensdauer werden verdeutlicht.
 Die Anwendung "Tipp Dich Fitt" verwendet verschiedene Klassen, die in einem sequentiellen Ablauf interagieren. Hier ist eine Übersicht über die wichtigsten Interaktionen zwischen den Klassen:
-
 ![diagramm1](https://github.com/Rhenania95/10-Finger-System/assets/147594404/25bce62e-a52c-4f9e-bf06-ec434c4a95ef)
 
 ## Klassenbeschreibungen
