@@ -95,9 +95,4 @@ public class Programmstart extends Application {
     public static void main(String[] args) {
         launch();
     }
-
-    public int addNumber(int a, int b) {
-        int result = a + b;
-        return result;
-    }
 }
