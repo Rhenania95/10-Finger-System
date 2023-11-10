@@ -342,7 +342,7 @@ timeline.play();
 
 # 9) Herleitung der Testfälle aus den Akzeptanzkriterien der User Stories  <a name="paragraph6"></a>
 
-| Testfall | Method   | Klasse                 | Ablauf                                                                 | Ergebniss   |
+| Testfall | Methode  | Klasse                 | Ablauf                                                                 | Ergebniss   |
 |----------|----------|------------------------|------------------------------------------------------------------------|-------------|
 | 1        | getDauer | TimerauswahlController | Den benutzerdefinierten Wert ist als Dauerwert benutzt und gespeichert | erfolgreich |
 | 2        | main     | Programmstart          | Der Programm wurde gestartet                                           | erfolgreich |
